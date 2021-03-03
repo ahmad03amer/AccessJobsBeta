@@ -14,6 +14,7 @@ import java.util.Locale;
 
 @RestController
 @RequestMapping("/api/job")
+@CrossOrigin //to hit the backend server when connect from the frontend server
 public class JobController {
 
     @Autowired
@@ -23,6 +24,7 @@ public class JobController {
 
     //@valid annotation to validate the object attributes and , i used the following code FieldErrors to display the list of errors from validation
     @PostMapping("")
+    @CrossOrigin
     public ResponseEntity<?> add(@Valid @RequestBody Job job, BindingResult result){
 
        ResponseEntity<?> errorMap = mapValidationErrorsService.mapValidationService(result);

@@ -7,6 +7,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.Date;
 
@@ -32,6 +33,7 @@ public class Job {
     private String location;
     private String type;
     @JsonFormat(pattern = "yyyy-mm-dd")
+    @NotNull(message = "Deadline date is required")
     private Date endDate;
     @JsonFormat(pattern = "yyyy-mm-dd")
     private Date createdAt;

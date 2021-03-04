@@ -1,9 +1,22 @@
 import React, { Component } from "react";
 import AddJobButton from "./job/AddJobButton";
 import JobItem from "./job/JobItem";
+import { connect } from "react-redux";
+import { getJobs } from "../actions/jobActions";
+import PropTypes from "prop-types";
+
 
 class Dashboard extends Component {
+
+  //different life cycle hooks
+  componentDidMount() {
+    this.props.getJobs();
+  }
+
   render() {
+
+    //es6 expression
+    const { jobs } = this.props.job;
     return (
       <div className="jobs">
         <div className="container">
@@ -18,10 +31,24 @@ class Dashboard extends Component {
           </div>
         </div>
 
-        <JobItem />
+        {
+          jobs.map(job => (
+
+            <JobItem key={job.id} job={job} />
+          ))
+        }
       </div>
     );
   }
 }
 
-export default Dashboard;
+Dashboard.propTypes = {
+  job: PropTypes.object.isRequired,
+  getJobs: PropTypes.func.isRequired
+}
+
+const mapStateToProps = state => ({
+  job: state.job, //from reducers/index.js (combine reducers)
+})
+//connect the component with the store
+export default connect(mapStateToProps, { getJobs })(Dashboard);

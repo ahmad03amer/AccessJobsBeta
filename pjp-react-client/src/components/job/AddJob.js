@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { addJob } from "../../actions/jobActions";
+import classnames from "classnames";
+
 
 class AddJob extends Component {
   //set up the initial state
@@ -18,10 +20,18 @@ class AddJob extends Component {
       type: "",
       endDate: "",
       salary: "",
+      errors: {}
     };
 
     this.onChange = this.onChange.bind(this); //to link each attribute and take its vakue when change
     this.onSubmit = this.onSubmit.bind(this);
+  }
+
+  //life cycle hook
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.errors) {
+      this.setState({ errors: nextProps.errors });
+    }
   }
 
   onChange(e) {
@@ -51,6 +61,8 @@ class AddJob extends Component {
   }
 
   render() {
+    //to get the errors 
+    const { errors } = this.state;
     return (
       <div>
         {
@@ -73,82 +85,129 @@ class AddJob extends Component {
                   <div className="form-group">
                     <input
                       type="text"
-                      className="form-control form-control-lg "
-                      placeholder="Job Name"
+                      className={classnames("form-control form-control-lg", {//change the class css when error occur in the property
+                        "is-invalid": errors.title
+                      })}
+                      placeholder="Job Title"
                       name="title"
                       value={this.state.title}
                       onChange={this.onChange}
                     />
+                    {errors.title && (//expression like an if statement
+                      <div className="invalid-feedback">{errors.title}</div>
+                    )}
                   </div>
+
                   <div className="form-group">
                     <input
                       type="text"
-                      className="form-control form-control-lg"
+                      className={classnames("form-control form-control-lg ", {
+                        "is-invalid": errors.jobIdentifier
+                      })}
                       placeholder="Unique Job ID"
                       name="jobIdentifier"
                       value={this.state.jobIdentifier}
                       onChange={this.onChange}
                     />
+                    {errors.jobIdentifier && (//expression like an if statement
+                      <div className="invalid-feedback">{errors.jobIdentifier}</div>
+                    )}
                   </div>
+
                   <div className="form-group">
                     <textarea
-                      className="form-control form-control-lg"
+                      className={classnames("form-control form-control-lg ", {
+                        "is-invalid": errors.description
+                      })}
                       placeholder="Job Description"
                       name="description"
                       value={this.state.description}
                       onChange={this.onChange}
                     ></textarea>
+                    {errors.description && (//expression like an if statement
+                      <div className="invalid-feedback">{errors.description}</div>
+                    )}
                   </div>
+
                   <div className="form-group">
                     <input
                       type="text"
-                      className="form-control form-control-lg "
+                      className={classnames("form-control form-control-lg ", {
+                        "is-invalid": errors.email
+                      })}
                       placeholder="Email"
                       name="email"
                       value={this.state.email}
                       onChange={this.onChange}
                     />
+                    {errors.email && (//expression like an if statement
+                      <div className="invalid-feedback">{errors.email}</div>
+                    )}
                   </div>
+
                   <div className="form-group">
                     <input
                       type="text"
-                      className="form-control form-control-lg "
+                      className={classnames("form-control form-control-lg ", {
+                        "is-invalid": errors.location
+                      })}
                       placeholder="location"
                       name="location"
                       value={this.state.location}
                       onChange={this.onChange}
                     />
+                    {errors.location && (//expression like an if statement
+                      <div className="invalid-feedback">{errors.location}</div>
+                    )}
                   </div>
+
                   <div className="form-group">
                     <input
                       type="text"
-                      className="form-control form-control-lg "
+                      className={classnames("form-control form-control-lg ", {
+                        "is-invalid": errors.type
+                      })}
                       placeholder="Job Type"
                       name="type"
                       value={this.state.type}
                       onChange={this.onChange}
                     />
+                    {errors.type && (//expression like an if statement
+                      <div className="invalid-feedback">{errors.type}</div>
+                    )}
                   </div>
+
                   <div className="form-group">
                     <input
                       type="text"
-                      className="form-control form-control-lg "
+                      className={classnames("form-control form-control-lg ", {
+                        "is-invalid": errors.salary
+                      })}
                       placeholder="Salary"
                       name="salary"
                       value={this.state.salary}
                       onChange={this.onChange}
                     />
+                    {errors.salary && (//expression like an if statement
+                      <div className="invalid-feedback">{errors.salary}</div>
+                    )}
                   </div>
+
                   <h6>Deadline Date</h6>
                   <div className="form-group">
                     <input
                       type="date"
-                      className="form-control form-control-lg"
+                      className={classnames("form-control form-control-lg ", {
+                        "is-invalid": errors.endDate
+                      })}
                       name="start_date"
                       name="endDate"
                       value={this.state.endDate}
                       onChange={this.onChange}
                     />
+                    {errors.endDate && (//expression like an if statement
+                      <div className="invalid-feedback">{errors.endDate}</div>
+                    )}
                   </div>
 
                   <input
@@ -167,7 +226,16 @@ class AddJob extends Component {
 
 //tell react that the add job function is a required prop to work corectly
 AddJob.propTypes = {
-  addJob: PropTypes.func.isRequired
-}
+  addJob: PropTypes.func.isRequired,
+  //make sure that we have the righ type
+  errors: PropTypes.object.isRequired
+};
 
-export default connect(null, { addJob })(AddJob);
+
+const maoStateToProps = state => ({
+  //errors come from state in the inspect element in redux extension
+  errors: state.errors
+})
+
+//should pass errors as a parameter when connect
+export default connect(maoStateToProps, { addJob })(AddJob);

@@ -1,7 +1,17 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+//after did DELETE_JOB now we need to active the button 
+import PropTypes from "prop-types"; //1
+import { connect } from "react-redux";//2
+import { deleteJob } from "../../actions/jobActions";
 
 class JobItem extends Component {
+
+  //7
+  onDeleteClick = id => {
+    this.props.deleteJob(id);
+  };
+
   render() {
 
     const { job } = this.props;
@@ -31,11 +41,13 @@ class JobItem extends Component {
                     <i className="fa fa-edit pr-1">Update Job Info</i>
                   </li>
                 </Link>
-                <a href="">
-                  <li className="list-group-item delete">
-                    <i className="fa fa-minus-circle pr-1">Delete Job</i>
-                  </li>
-                </a>
+
+                <li className="list-group-item delete"
+                  onClick={
+                    this.onDeleteClick.bind(this, job.jobIdentifier)}>
+                  <i className="fa fa-minus-circle pr-1">Delete Job</i>
+                </li>
+
               </ul>
             </div>
           </div>
@@ -45,4 +57,12 @@ class JobItem extends Component {
   }
 }
 
-export default JobItem;
+//6
+JobItem.propTypes = {
+  deleteJob: PropTypes.func.isRequired
+};
+
+
+
+//5
+export default connect(null, { deleteJob })(JobItem);

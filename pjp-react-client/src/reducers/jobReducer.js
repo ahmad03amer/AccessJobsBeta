@@ -1,4 +1,4 @@
-import { GET_JOB, GET_JOBS } from '../actions/types'; //2
+import { GET_JOB, GET_JOBS, DELETE_JOB } from '../actions/types'; //2
 //stup the initial state
 const initialState = {
     jobs: [],
@@ -17,6 +17,14 @@ export default function (state = initialState, action) {
             return {
                 ...state,
                 job: action.payload //return the payload from server when actions occures
+            };
+
+        case DELETE_JOB:
+            return {
+                ...state,
+                jobs: state.jobs.filter(
+                    job => job.jobIdentifier !== action.payload
+                )//return the entire list without the deleted job without refeesh the page
             };
         default:
             return state;

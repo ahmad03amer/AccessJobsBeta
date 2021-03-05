@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import AddJob from "./components/job/AddJob";
 import { Provider } from "react-redux"; //setup the redux
 import store from "./store";
+import UpdateJob from "./components/job/UpdateJob";
 
 class App extends Component {
   render() {
@@ -17,6 +18,11 @@ class App extends Component {
             <Header />
             <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/addJob" component={AddJob} />
+            {
+              //pass parameter using /:param
+            }
+            <Route exact path="/updateJob/:id" component={UpdateJob} />
+
           </div>
         </Router>
       </Provider>

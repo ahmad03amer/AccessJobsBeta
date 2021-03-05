@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class JobItem extends Component {
   render() {
@@ -22,11 +23,14 @@ class JobItem extends Component {
                     <i className="fa fa-flag-checkered pr-1">Job Board </i>
                   </li>
                 </a>
-                <a href="#">
+                {
+                  //this is the way to get an id in the components elements
+                }
+                <Link to={`/updateJob/${job.jobIdentifier}`}>
                   <li className="list-group-item update">
                     <i className="fa fa-edit pr-1">Update Job Info</i>
                   </li>
-                </a>
+                </Link>
                 <a href="">
                   <li className="list-group-item delete">
                     <i className="fa fa-minus-circle pr-1">Delete Job</i>

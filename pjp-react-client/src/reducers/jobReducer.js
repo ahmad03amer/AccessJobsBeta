@@ -1,4 +1,4 @@
-import { GET_JOBS } from '../actions/types'; //2
+import { GET_JOB, GET_JOBS } from '../actions/types'; //2
 //stup the initial state
 const initialState = {
     jobs: [],
@@ -11,6 +11,12 @@ export default function (state = initialState, action) {
             return {
                 ...state,
                 jobs: action.payload
+            };
+
+        case GET_JOB:
+            return {
+                ...state,
+                job: action.payload //return the payload from server when actions occures
             };
         default:
             return state;

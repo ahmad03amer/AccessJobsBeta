@@ -12,7 +12,7 @@ import java.util.Map;
 @Service
 public class MapValidationErrorsService {
 
-    public ResponseEntity<?> mapValidationService(BindingResult result) {
+    public ResponseEntity<?> MapValidationService(BindingResult result) {
         //using field errors validation , we can return the list of errors in the input object as a useful msg
         if (result.hasErrors()) {
             //to display a map as a key value for the errors fields , the field that have an error will displays on the screen with the msg

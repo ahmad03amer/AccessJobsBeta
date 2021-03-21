@@ -1,6 +1,7 @@
 package com.accessjobs.pjp.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -39,6 +40,13 @@ public class Job {
     private Date createdAt;
     private String salary;
     private long companyId;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JsonIgnore
+    private User user;
+
+    //to allow some features depending on the role
+    private String userRole;
 
     @PrePersist
     protected void onCreate(){

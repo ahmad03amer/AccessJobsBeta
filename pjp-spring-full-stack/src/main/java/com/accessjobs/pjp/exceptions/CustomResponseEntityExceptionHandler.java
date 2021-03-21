@@ -16,4 +16,11 @@ public class CustomResponseEntityExceptionHandler extends ResponseEntityExceptio
         JobIdExceptionResponse jobIdExceptionResponse = new JobIdExceptionResponse(ex.getMessage());
         return new ResponseEntity<>(jobIdExceptionResponse, HttpStatus.BAD_REQUEST);
     }
+
+    //3
+    @ExceptionHandler
+    public final ResponseEntity<Object> handleUsernameAlreadyExists(EmailAlreadyExistsException ex, WebRequest request){
+        EmailAlreadyExistsResponse exceptionResponse = new EmailAlreadyExistsResponse(ex.getMessage());
+        return new ResponseEntity(exceptionResponse, HttpStatus.BAD_REQUEST);
+    }
 }

@@ -10,4 +10,6 @@ public interface JobRepository extends CrudRepository<Job,Long> {
     Job findByJobIdentifier(String jobIdentifier);
     @Override
     Iterable<Job> findAll();
+
+    Iterable<Job> findAllByUserId(Long userId);
 }

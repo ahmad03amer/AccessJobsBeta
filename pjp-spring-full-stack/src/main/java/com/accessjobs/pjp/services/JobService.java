@@ -11,7 +11,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.security.Principal;
 import java.util.Locale;
 
 @Service
@@ -25,12 +24,9 @@ public class JobService {
 
     //save or update
     public Job add(Job job,String email){
-       //email = "test@test.com";
-        //logic , validation and handling
-
         //if we need to update it
-        Long jobId = job.getId(); // becase we cannot use != with l
-        if(jobId != null) {
+        Long jobId = job.getId(); // becase we cannot use != with long and != null is always true
+        if(jobId > 0 ) {
             Job existingJob = jobRepository.findByJobIdentifier(job.getJobIdentifier());
 
             //if we try to update a job is not null and not for me
@@ -42,7 +38,7 @@ public class JobService {
         }
 
         try {
-            logger.info("- JOB Service - email .is"+email);
+            logger.info("- JOB Service - desc .is"+job.getDescription());
             User user = userRepository.findByEmail(email);
             job.setUser(user);
             logger.warn(user.getEmail());

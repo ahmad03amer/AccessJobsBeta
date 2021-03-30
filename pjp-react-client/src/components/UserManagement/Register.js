@@ -6,6 +6,9 @@ import { connect, Provider } from "react-redux";
 import classnames from "classnames";
 import store from "../../store";
 import ImageUploader from "./ImageUploader";
+import { CountryDropdown } from 'react-country-region-selector';
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
 
 class Register extends Component {
 
@@ -17,8 +20,13 @@ class Register extends Component {
             email: '',
             fullName: '',
             gender: '',
+            bod: '',
+            country: '',
+            city: '',
+            phoneNumber: '',
             password: '',
             confirmPassword: '',
+            role: '',
             errors: {}
         };
 
@@ -48,8 +56,13 @@ class Register extends Component {
             email: this.state.email,
             fullName: this.state.fullName,
             gender: this.state.gender,
+            bod: this.state.bod,
+            country: this.state.country,
+            city: this.state.city,
+            phoneNumber: this.state.phoneNumber,
             password: this.state.password,
-            confirmPassword: this.state.confirmPassword
+            confirmPassword: this.state.confirmPassword,
+            role: this.state.role
         };
 
         this.props.createNewUser(newUser, this.props.history);
@@ -59,6 +72,10 @@ class Register extends Component {
     onChange(e) {
         this.setState({ [e.target.name]: e.target.value });
     }
+    selectCountry(val) {
+        this.setState({ country: val });
+    }
+
 
     render() {
         //15
@@ -77,6 +94,12 @@ class Register extends Component {
                                     <ImageUploader />
                                 </Provider>
                             */}
+                                <div className="form-group">
+                                    <h6> Image</h6>
+
+                                    <input type="file" name="file" id="customeFile    "></input>
+                                    <label for="customeFile">Choose file</label>
+                                </div>
                                 <div className="form-group">
                                     <input
                                         type="text"
@@ -115,14 +138,52 @@ class Register extends Component {
                                         )
                                     }
                                 </div>
-                                {/*
+
                                 <div className="form-group">
-                                    <select value={this.state.value} onChange={this.onChange}>
+                                    <select name="gender" value={this.state.value} onChange={this.onChange}>
                                         <option value="male">Male</option>
                                         <option value="female">Female</option>
                                         <option value="other">Other</option>
                                     </select>
-                                </div>*/}
+                                </div>
+                                <div className="form-group">
+                                    <h6> DOB</h6>
+                                    <input
+                                        name="bod"
+                                        type="date"
+                                        className={classnames("form-control form-control-lg ", {
+                                            "is-invalid": errors.endDate
+                                        })}
+                                        value={this.state.bod}
+                                        onChange={this.onChange}
+                                    />
+                                    {errors.endDate && (//expression like an if statement
+                                        <div className="invalid-feedback">{errors.endDate}</div>
+                                    )}
+                                </div>
+
+                                <div className="form-group">
+                                    <CountryDropdown
+                                        name="country"
+                                        value={this.state.country}
+                                        onChange={(val) => this.selectCountry(val)} />
+                                </div>
+                                <div className="form-group">
+                                    <input
+                                        type="text"
+                                        name="city"
+                                        placeholder="Enter city"
+                                        value={this.state.city}
+                                        onChange={this.onChange} />
+                                </div>
+                                <div className="form-group">
+                                    <input
+                                        type="text"
+                                        name="phoneNumber"
+                                        placeholder="Enter phone number"
+                                        value={this.state.phoneNumber}
+                                        onChange={this.onChange} />
+                                </div>
                                 <div className="form-group">
 
                                     <input
@@ -157,6 +218,18 @@ class Register extends Component {
                                             <div className="invalid-feedback">{errors.confirmPassword}</div>
                                         )
                                     }
+                                </div>
+                                <div className="form-group">
+                                    <div onChange={this.onChange}>
+                                        <input type="radio" value="Company" name="role" /> Company
+        <input type="radio" value="Employee" name="role" /> Employee
+      </div>
+                                </div>
+                                <div className="form-group">
+                                    <h6> CV</h6>
+
+                                    <input type="file" name="file" id="customeFile    "></input>
+                                    <label for="customeFile">Choose file</label>
                                 </div>
                                 <input type="submit" className="btn btn-info btn-block mt-4" />
                             </form>

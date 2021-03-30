@@ -36,7 +36,14 @@ public class User implements UserDetails {
     private  Date updatedAt;
     private String role;
 
-
+    private  Date BOD;
+    private String gender;
+    private String country;
+    private String city;
+    private String phoneNumber;
+    @Lob
+    @Column(columnDefinition = "MEDIUMBLOB")
+    private String image;
 
     //OneToMany with Job
     @OneToMany(cascade = CascadeType.REFRESH, fetch = FetchType.EAGER, mappedBy = "user", orphanRemoval = true)
@@ -92,7 +99,7 @@ public class User implements UserDetails {
     public boolean isCredentialsNonExpired() {
         return true;
     }
-
+    
     @Override
     @JsonIgnore
     public boolean isEnabled() {

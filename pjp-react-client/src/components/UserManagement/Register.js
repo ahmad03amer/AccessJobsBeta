@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 // 3 import the necessary components
 import { createNewUser } from "../../actions/securityActions";

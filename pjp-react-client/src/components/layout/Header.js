@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
+import logo from "../../picture/Moh.svg"; 
 //make a dynamic header
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logout } from "../../actions/securityActions";
+
 
 class Header extends Component {
 
@@ -22,7 +23,7 @@ class Header extends Component {
       <div className="collapse navbar-collapse" id="mobile-nav">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
-            <Link className="nav-link" to="/dashboard">
+            <Link className="nav-link text-white" to="/dashboard">
               Dashboard
             </Link>
           </li>
@@ -30,14 +31,14 @@ class Header extends Component {
 
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <Link className="nav-link" to="/dashboard">
+            <Link className="nav-link text-white" to="/dashboard">
               <i className="fas fa-user-circle mr-1" />
               {user.fullName}
             </Link>
           </li>
           <li className="nav-item">
             <Link
-              className="nav-link"
+              className="btn btn-outline-primary my-2 my-sm-0 ml-3"
               to="/logout"
               onClick={this.logout.bind(this)}
             >
@@ -50,16 +51,18 @@ class Header extends Component {
 
     const userIsNotAuthenticated = (
       <div className="collapse navbar-collapse" id="mobile-nav">
+
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <Link className="nav-link" to="/register">
+            <Link className="btn btn-outline-primary my-2 my-sm-1 mr-1" to="/register">
               Sign Up
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/login">
+            <Link className="btn btn-outline-primary my-2 my-sm-1 ml-3" to="/login">
               Login
             </Link>
+
           </li>
         </ul>
       </div>
@@ -74,23 +77,58 @@ class Header extends Component {
     }
 
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark bg-primary mb-4">
-        <div className="container">
-          <Link className="navbar-brand" to="/">
-            AccessJobs
-                    </Link>
+      <nav className="navbar navbar-expand-lg navbar-light bg-dark " >
+        <div className="container-fluid">
+          <Link className="navbar-brand ml-1 "
+            href="#">
+              <img src={logo} alt="logo" style={{ width: '100px'}} />
+          </Link>
+
           <button
             className="navbar-toggler"
             type="button"
-            data-toggle="collapse"
-            data-target="#mobile-nav"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon" />
+            {/*this is for the navigation bar"berger" to have a white color */}
+            <span>
+              <i className="fas fa-bars" style={{ color: '#ffffff' }}></i>
+            </span>
           </button>
-          {
-            //navbar
-          }
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav mr-auto mb-2 mb-lg-0">
+              <li className="nav-item active">
 
+                <Link className="nav-link text-white ml-1 " aria-current="page" to="/">
+                  <i className="fas fa-home"></i>  Home&nbsp;<span className="sr-only">(current)</span>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-white  ml-3" to="/remotjob">Find Jobs</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-white  ml-3" to="/jobseekers">Job Seekers</Link>
+              </li>
+
+              <li className="nav-item">
+                <Link className="nav-link text-white  ml-3" to="/postjobs">Employer? Post Jobs </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-white  ml-3" to="/postjobs">Pricing</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-white  ml-3" to="/onlinecourses">Blogs</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-primary ml-3" to="/contactus">Contact Us</Link>
+              </li>
+
+            </ul>
+
+          </div>
           {headerLinks}
 
         </div>

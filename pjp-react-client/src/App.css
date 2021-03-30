@@ -2,6 +2,7 @@ img {
   width: 100%;
 }
 
+
 .navbar {
   background-color: #e3f2fd;
 }
@@ -63,3 +64,24 @@ img {
 .form-control::placeholder {
   color: #bbb !important;
 }
+
+:root{
+  --mainDark:#343a40;
+  --mainGrey:rgba(109, 109, 109);
+  --mainLightGrey:rgba(172, 172, 172);
+  --mainWhite:#fff;
+  --mainBlue:#007bff; 
+}
+
+/*
+for toggler button in nave_bar 
+*/
+.navbar-toggler:focus {
+
+  outline: none;
+}
+
+.navbar-toggler {
+  border: none;
+}
+

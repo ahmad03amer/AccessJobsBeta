@@ -28,11 +28,11 @@ class JobItem extends Component {
             </div>
             <div className="col-md-4 d-none d-lg-block">
               <ul className="list-group">
-                <a href="#">
+                <Link to={`/jobBoard/${job.jobIdentifier}`}>
                   <li className="list-group-item board">
                     <i className="fa fa-flag-checkered pr-1">Job Board </i>
                   </li>
-                </a>
+                </Link>
                 {
                   //this is the way to get an id in the components elements
                 }

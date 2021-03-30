@@ -20,7 +20,7 @@ export const addJob = (job, history) => async dispatch => {
 
 
 export const getJobs = () => async dispatch => {//4
-  const jobs = await axios.get("/api/job/all");
+  const jobs = await axios.get("/api/job/allUserJobs");
   dispatch({
     type: GET_JOBS,
     payload: jobs.data

@@ -36,6 +36,8 @@ public class User implements UserDetails {
     private  Date updatedAt;
     private String role;
 
+
+
     //OneToMany with Job
     @OneToMany(cascade = CascadeType.REFRESH, fetch = FetchType.EAGER, mappedBy = "user", orphanRemoval = true)
     private List<Job> jobs = new ArrayList<>();

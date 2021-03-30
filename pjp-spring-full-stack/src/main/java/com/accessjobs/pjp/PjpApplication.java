@@ -1,16 +1,19 @@
 package com.accessjobs.pjp;
 
-import org.apache.catalina.Server;
-import org.springframework.boot.CommandLineRunner;
+import com.accessjobs.pjp.fileservice.FileStorageProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import java.sql.SQLException;
-import java.util.concurrent.Flow;
 
 @SpringBootApplication
+//@ConfigurationPropertiesScan
+@EnableConfigurationProperties({
+		FileStorageProperties.class
+})
 public class PjpApplication {
 
 		@Bean

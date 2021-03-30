@@ -86,7 +86,7 @@ class UpdateJob extends Component {
         return (
             <div>
 
-                <div className="project">
+                <div className="job">
                     <div className="container">
                         <div className="row">
                             <div className="col-md-8 m-auto">

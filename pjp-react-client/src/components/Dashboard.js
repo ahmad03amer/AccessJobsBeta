@@ -3,6 +3,7 @@ import AddJobButton from "./job/AddJobButton";
 import JobItem from "./job/JobItem";
 import { connect } from "react-redux";
 import { getJobs } from "../actions/jobActions";
+import JobBoard from "./job/JobBoard";
 import PropTypes from "prop-types";
 
 

@@ -28,9 +28,9 @@ img {
   color: red;
 }
 
+/*
 .landing {
   position: relative;
-  /* background: url("../img/showcase.jpg") no-repeat; */
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -41,7 +41,7 @@ img {
 .landing-inner {
   padding-top: 80px;
 }
-
+*/
 .dark-overlay {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
@@ -62,4 +62,15 @@ img {
 
 .form-control::placeholder {
   color: #bbb !important;
+}
+
+/* we are hiring section */
+
+.we-are-hiring {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  top: 55px;
+  left: 0px;
+  z-index: 1000;
 }

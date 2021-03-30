@@ -1,10 +1,11 @@
-
 import React, { Component } from "react";
 // 3 import the necessary components
 import { createNewUser } from "../../actions/securityActions";
 import PropTypes from "prop-types";
-import { connect } from "react-redux";
+import { connect, Provider } from "react-redux";
 import classnames from "classnames";
+import store from "../../store";
+import ImageUploader from "./ImageUploader";
 
 class Register extends Component {
 
@@ -15,6 +16,7 @@ class Register extends Component {
         this.state = {
             email: '',
             fullName: '',
+            gender: '',
             password: '',
             confirmPassword: '',
             errors: {}
@@ -45,6 +47,7 @@ class Register extends Component {
         const newUser = {
             email: this.state.email,
             fullName: this.state.fullName,
+            gender: this.state.gender,
             password: this.state.password,
             confirmPassword: this.state.confirmPassword
         };
@@ -61,6 +64,7 @@ class Register extends Component {
         //15
         const { errors } = this.state;
         return (
+
             <div className="register">
                 <div className="container">
                     <div className="row">
@@ -68,6 +72,11 @@ class Register extends Component {
                             <h1 className="display-4 text-center">Sign Up</h1>
                             <p className="lead text-center">Create your Account</p>
                             <form onSubmit={this.onSubmit}>
+                                {/*
+                                <Provider store={store}>
+                                    <ImageUploader />
+                                </Provider>
+                            */}
                                 <div className="form-group">
                                     <input
                                         type="text"
@@ -106,7 +115,16 @@ class Register extends Component {
                                         )
                                     }
                                 </div>
+                                {/*
                                 <div className="form-group">
+                                    <select value={this.state.value} onChange={this.onChange}>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>*/}
+                                <div className="form-group">
+
                                     <input
                                         type="password"
                                         className={classnames("form-control form-control-lg", {
@@ -145,7 +163,7 @@ class Register extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         );
     }
 }

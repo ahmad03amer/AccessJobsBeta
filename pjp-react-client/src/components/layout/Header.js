@@ -14,7 +14,6 @@ class Header extends Component {
   }
 
   render() {
-
     //when the user is authinticated
     const { validToken, user } = this.props.security;
 
@@ -87,6 +86,7 @@ class Header extends Component {
           >
             <span className="navbar-toggler-icon" />
           </button>
+
           {
             //navbar
           }

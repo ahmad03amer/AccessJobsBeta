@@ -8,3 +8,5 @@ export const DELETE_JOB = "DELETE_JOB";
 
 //1 first thing to do in registration is to define a new type
 export const SET_CURRENT_USER = "SET_CURRENT_USER";
+
+export const UPLOAD_IMAGE = "UPLOAD_IMAGE";

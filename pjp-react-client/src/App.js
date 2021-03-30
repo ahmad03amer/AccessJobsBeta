@@ -20,8 +20,7 @@ import { logout } from "./actions/securityActions";
 
 //secure private routes
 import SecuredRoute from "./securityUtils/SecureRoute";
-
-
+import JobBoard from "./components/job/JobBoard";
 
 const jwtToken = localStorage.jwtToken;
 
@@ -67,6 +66,8 @@ class App extends Component {
                 //pass parameter using /:param
               }
               <SecuredRoute exact path="/updateJob/:id" component={UpdateJob} />
+              <SecuredRoute exact path="/jobBoard/:id" component={JobBoard} />
+
 
             </Switch>
 

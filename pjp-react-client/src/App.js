@@ -11,6 +11,7 @@ import UpdateJob from "./components/job/UpdateJob";
 import Landing from "./components/Layout/Landing";
 import Register from "./components/UserManagement/Register";
 import Login from "./components/UserManagement/Login";
+import Footer from "./components/Layout/Footer";
 //check if the jwt token is valid and keep it in the storage as long as it is valid
 import jwt_decode from "jwt-decode";
 import setJWTToken from "./securityUtils/setJWTToken";
@@ -21,6 +22,22 @@ import { logout } from "./actions/securityActions";
 //secure private routes
 import SecuredRoute from "./securityUtils/SecureRoute";
 import JobBoard from "./components/job/JobBoard";
+
+
+/* To import the page  */
+import AboutUs from "./components/page/AboutUs";
+import Blogs from "./components/page/Blogs";
+import ContactUs from "./components/page/ContactUs";
+import FindJobs from "./components/page/FindJobs";
+import JobSeekers from "./components/page/JobSeekers";
+import Pricing from "./components/page/Pricing";
+import EmployerPostJob from "./components/page/EmployerPostJob";
+
+
+
+
+
+
 
 const jwtToken = localStorage.jwtToken;
 
@@ -55,6 +72,15 @@ class App extends Component {
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
 
+            {/* this is the path for page  */}
+            <Route exact path="/aboutUs" component={AboutUs} />
+            <Route exact path="/blogs" component={Blogs} />
+            <Route exact path="/contactUs" component={ContactUs} />
+            <Route exact path="/findJobs" component={FindJobs} />
+            <Route exact path="/jobSeekers" component={JobSeekers} />
+            <Route exact path="/pricing" component={Pricing} />
+            <Route exact path="/employerPostJob" component={EmployerPostJob} />
+
             {
               //Private Routes
             }
@@ -70,7 +96,7 @@ class App extends Component {
 
 
             </Switch>
-
+            <Footer/>
           </div>
         </Router>
       </Provider>

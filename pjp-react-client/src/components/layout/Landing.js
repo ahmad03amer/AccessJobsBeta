@@ -22,6 +22,10 @@ class Landing extends Component {
 
                                 <div className="cover">
 
+
+                                    <h1> This is the Home page </h1>
+
+
                                     {/*
                                     <h1 className="display-3 mb-4">
                                         Access Jobs

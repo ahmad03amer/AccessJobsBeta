@@ -9,6 +9,8 @@ import { Provider } from "react-redux"; //setup the redux
 import store from "./store";
 import UpdateJob from "./components/job/UpdateJob";
 import Landing from "./components/Layout/Landing";
+
+
 import Register from "./components/UserManagement/Register";
 import Login from "./components/UserManagement/Login";
 import Footer from "./components/Layout/Footer";
@@ -80,7 +82,7 @@ class App extends Component {
             <Route exact path="/jobSeekers" component={JobSeekers} />
             <Route exact path="/pricing" component={Pricing} />
             <Route exact path="/employerPostJob" component={EmployerPostJob} />
-
+           {/* <Route                               component={NotFoundPage}/> */} 
             {
               //Private Routes
             }

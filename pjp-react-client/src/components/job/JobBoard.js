@@ -65,7 +65,7 @@ class JobBoard extends Component {
         const { errors } = this.state;
 
         return (
-            <div className="container">
+            <div className="container mt-4 mb-4">
                 <div className="row">
                     <div className="col-md-8 m-auto">
                         <Card className="text-center">
@@ -81,7 +81,7 @@ class JobBoard extends Component {
                                 <Card.Text>
                                     {this.state.location}
                                 </Card.Text>
-                                <Button variant="primary">Apply</Button>
+                                <Button variant="primary">Malak </Button>
                             </Card.Body>
                             <Card.Footer className="text-muted">{this.state.date}</Card.Footer>
                         </Card>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../../components/Page_Css/pricing.css';
+import palpay from '../../picture/palpay.jpg'
 //Importing bootstrap and other modules
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -110,6 +111,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                  </div>
                </div>
              </section>
+
+
+
+
+
+
+
+    
            </div>
         )
     }

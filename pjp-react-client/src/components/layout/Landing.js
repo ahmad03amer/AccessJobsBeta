@@ -1,9 +1,11 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import weAreHiring from "../../imgs/we-are-hiring-5.jpg";
 //when logged in prevent sign up
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
+import Carsual from'./Carsual'; 
+
+
 
 class Landing extends Component {
     componentDidMount() {
@@ -13,41 +15,35 @@ class Landing extends Component {
     }
     render() {
         return (
-            <div className="landing">
-                <div className="light-overlay landing-inner text-dark">
-                    <div className="container">
-
-                        <div className="row">
-                            <div className="col-md-12 text-center">
-
-                                <div className="cover">
-
-
-                                    <h1> This is the Home page </h1>
-
-
-                                    {/*
-                                    <h1 className="display-3 mb-4">
-                                        Access Jobs
-                </h1>
-                                    <p className="lead">
-                                        Create your account to explore and add jobs
-                </p>
-                                    <hr />
-                                    <Link className="btn btn-lg btn-primary mr-2" to="/register">
-                                        Sign Up
-                </Link>
-                                    <Link className="btn btn-lg btn-secondary mr-2" to="/login">
-                                        Login
-                </Link>
-                                */}
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          
+           <div>
+               <Carsual/>
+            <div className="container">
+            <div className="row">
+            <div className="col-md-12">
+            <div className="text-lg-center text-left">
+            <h3 className="mt-5 mb-lg-2 font-weight-bold" > Explore Jobs By Category </h3>
+            <p className="mb-1 text-dark"> Pick from the list</p>
             </div>
+            </div> 
+            </div>
+         <div className="row mt-5">
+         {/*<InfoConsumer> 
+
+           {value=>{
+           return value.info.map(item =>{
+               return < Info key={item.id} item={item}/>;
+           })
+                }}
+        </InfoConsumer>
+        */}
+         </div>
+         </div>   
+           </div>   
+
+   
+ 
+
         );
     }
 }

@@ -109,11 +109,7 @@ class Header extends Component {
                 <Link className="nav-link text-white  ml-2" to="/findJobs">Find Jobs</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white  ml-2" to="/jobseekers">Job Seekers</Link>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link text-white  ml-2" to="/employerPostJob">Employer? Post Jobs </Link>
+                <Link className="nav-link text-white  ml-2" to="/employerPostJob">Employer/Job Seekers</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link text-white  ml-2" to="/pricing">Pricing</Link>

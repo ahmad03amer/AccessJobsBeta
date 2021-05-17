@@ -6,7 +6,8 @@ import React, { Component } from 'react'
         return (
             <div>
               
-               <center> <h1> This is Emloyer Post Job page  </h1></center> 
+          <center>   <iframe src="https://palestine.tanqeeb.com/s/jobs/IT-jobs?widget=1&width=320&height=600&color1=052B5B&color2=FFFFFF" width="320" height="600" frameBorder="0" border="0" scrolling="no"></iframe>  </center>       
+         
 
             </div>
         )

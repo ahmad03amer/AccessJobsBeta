@@ -10,150 +10,101 @@ import "../../css/Footer.css";
 class Footer extends Component {
   render() {
     return (
-      <div className='footer-container'>
-      {/*<img src={footersvg} className="footer-image" alt="" />*/}
+      <div className='footer'>
+        <footer id="footer">
+        <div className="footer-top">
+      <div className="container">
+        <div className="row">
+
+          <div className="col-lg-3 col-md-6 footer-links">
+            <h3>Access Jobs</h3>
+            <p>
+              Birzeit University  <br></br>
+              Ramallah,West-Bank<br></br>
+              palestine <br></br>
+              
+              <strong>Phone:</strong> 009705453052<br></br>
+              <strong>Email:</strong> Access_jobs@gmail.com<br></br>
+              <ul>
+              <li><i className="fas fa-angle-right mt-2"></i> <Link className="mt-2" to='/aboutUs'>About Us</Link></li>
+              <li><i className="fas fa-angle-right"></i> <Link to='/contactUs'>Contact Us</Link></li>
+              </ul>
+              </p>
+           
+          </div>
+
+          <div className="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i className="fas fa-angle-right"></i> <Link to='/'>Home</Link></li>
+              <li><i className="fas fa-angle-right"></i> <Link to='/findJobs'>Find Jobs</Link></li>
+              <li><i className="fas fa-angle-right"></i> <Link to='/employerPostJob'>Employer/Job Seekers</Link></li>
+              <li><i className="fas fa-angle-right"></i> <Link to='/blogs'>Blogs</Link></li>
+              <li><i className="fas fa-angle-right"></i> <Link to='/pricing'>Pricing</Link></li>
+            </ul>
+          </div>
+
+          <div className="col-lg-3 col-md-6 footer-links">
+            <h4>Links</h4>
+            <ul>
+              <li><i className="fas fa-angle-right"></i> <Link to='/Privacy'>Privacy Policy</Link></li>
+              <li><i className="fas fa-angle-right"></i> <Link to='/Disclaimer'>Disclaimer</Link></li>
+              <li><i className="fas fa-angle-right"></i> <Link to='/'>Job Description Database</Link></li>
+              <li><i className="fas fa-angle-right"></i> <Link to='/'>Cv Templates Database</Link></li>
+              <li><i className="fas fa-angle-right"></i> <Link to='/TrnaingCourses'>Training courses</Link></li>
+            </ul>
+          </div>
+          
+
+          <div className="col-lg-4 col-md-6 footer-newsletter">
+            <center> <img src={logo} alt="logo" style={{ width: '200px', height:'90px'}} /></center>
+            <center><h4>You can subscribe at any time.</h4></center>
+            <p> Join Us Immediately To Get To know The Best Jobs.</p>
+            <form  method="post">
+              <input  type="email" name="email"placeholder='Your Email'/>
+              <Link to='/contactUs'>
+              <input type="submit" value="Contact Us" /></Link>
+             
+              
+             
+              {/*  <Link type="submit" value="Contact Us" to="/register" >Sign UP</Link>*/}
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div className="container d-md-flex py-4">
+
+<div className="mr-md-auto text-center text-md-left">
+  <div className="copyright">
+    &copy;. All Rights Reserved<strong>  <a className="ml-1">Access Job Team © 2021</a></strong>
+  </div>
+  <div className="credits">
    
-   {/* <section className='footer-subscription'>
+  <strong> <a>Designed by</a></strong>  <a href="https://Access Job.com/">Access Job Team</a>
+  </div>
+  <div className='footer-logo'>
+    <Link to='/' className='social-logo'>
+      Access Job
+      <i className='fab fa-typo3' />
+    </Link>
+  </div>
+</div>
+<div class="social-links text-center text-md-right pt-3 pt-md-0">
+  <a href="/" className="twitter"><i className='fab fa-twitter'></i></a>
+  <a href="/" className="facebook"><i className='fab fa-facebook-f'></i></a>
+  <a href="/" className="instagram"><i className='fab fa-instagram'></i></a>
+  <a href="/" className="youtube"><i className='fab fa-youtube'></i></a>
+  <a href="/" className="linkedin"><i className='fab fa-linkedin'></i></a>
+</div>
+</div>
+
+        </footer>
   
-     <p className='footer-subscription-heading'>
-     Join Us Immediately To Get To know The Best Jobs published On Our Website
-     </p>
-     <p className='footer-subscription-text'>
-       You can subscribe at any time.
-     </p>
-     <div className="row">
-    {/*  <img src={logo} alt="logo" style={{ width: '200px'}} />
-     <div className='input-areas'>
-       <form>
-         <input
-           className='footer-input'
-           name='email'
-           type='email'
-           placeholder='Your Email'
-         />
-      <Link type="submit" value="Contact Us" to="/register"  className="btn btn-outline-primary my-2 my-sm-0" >Sign UP</Link>
-
-         {/*<Button buttonStyle='btn--outline'>Subscribe</Button>
-       </form>
-     </div>
-     </div>
-   
-   </section> 
-  */}
-   
-   <div class='footer-links'>
-     <section className="img">
-  <center> <img src={logo} alt="logo" style={{ width: '200px', height:'90px'}} /></center>
-   <center><p className="text-white mb-0">
-     Join Us Immediately To Get To know The Best Jobs.
-     </p></center>
-     <center> <p className="text-white ">
-     You can subscribe at any time.
-     </p></center>
-     <div className='input-areas ml-2'>
-       <form>
-         <input
-           className='footer-input'
-           name='email'
-           type='email'
-           placeholder='Your Email'
-         />
-      <Link type="submit" value="Contact Us" to="/register"  className="btn btn-outline-primary my-2 my-sm-0" >Sign UP</Link>
-
-         {/*<Button buttonStyle='btn--outline'>Subscribe</Button>*/}
-       </form>
-     </div>
-
-
-
-     </section>
-     <div className='footer-link-wrapper'>
-       <div class='footer-link-items mr-5'>
-         <h2>About Us</h2>
-         <Link to='/aboutUs'><i class="fas fa-angle-right"></i>How it works</Link>
-         <Link to='/aboutUs'><i class="fas fa-angle-right"></i>Testimonials</Link>
-         <Link to='/aboutUs'><i class="fas fa-angle-right"></i>Careers</Link>
-         <Link to='/aboutUs'><i class="fas fa-angle-right"></i>Investors</Link>
-         <Link to='/aboutUs'><i class="fas fa-angle-right"></i>Terms of Service</Link>
-       </div>
-       <div class='footer-link-items mr-5'>
-         <h2>Contact Us</h2>
-         <Link to='/contactUs'><i class="fas fa-angle-right"></i>Contact</Link>
-         <Link to='/contactUs'><i class="fas fa-angle-right"></i>Support</Link>
-         <Link to='/contactUs'><i class="fas fa-angle-right"></i>Destinations</Link>
-         <Link to='/contactUs'><i class="fas fa-angle-right"></i>Sponsorships</Link>
-       </div>
-    
-      
-       <div class='footer-link-items mr-5'>
-         <h2>Pricing</h2>
-         <Link to='/pricing'><i class="fas fa-angle-right"></i>Basic Pay</Link>
-         <Link to='/pricing'><i class="fas fa-angle-right"></i>Pro Pay</Link>
-         <Link to='/pricing'><i class="fas fa-angle-right"></i>Enterprise</Link>
-         <Link to='/pricing'><i class="fas fa-angle-right"></i>Terms of Pay</Link>
-       </div>
-       <div class='footer-link-items mr-5'>
-         <h2>Blogs</h2>
-         <Link to='/blogs'><i class="fas fa-angle-right"></i>Instagram</Link>
-         <Link to='/blogs'><i class="fas fa-angle-right"></i>Facebook</Link>
-         <Link to='/blogs'><i class="fas fa-angle-right"></i>Youtube</Link>
-         <Link to='/blogs'><i class="fas fa-angle-right"></i>Twitter</Link>
-       </div>
-     </div>
-   </div>
-   <section class='social-media'>
-     <div class='social-media-wrap'>
-       <div class='footer-logo'>
-         <Link to='/' className='social-logo'>
-           Access Job
-           <i class='fab fa-typo3' />
-         </Link>
-       </div>
-       <small class='website-rights'>Access Job Team © 2021</small>
-       <div class='social-icons'>
-         <Link
-           class='social-icon-link facebook'
-           to='/'
-           target='_blank'
-           aria-label='Facebook'
-         >
-           <i class='fab fa-facebook-f' />
-         </Link>
-         <Link
-           class='social-icon-link instagram'
-           to='/'
-           target='_blank'
-           aria-label='Instagram'
-         >
-           <i class='fab fa-instagram' />
-         </Link>
-         <Link
-           class='social-icon-link youtube'
-           to='/'
-           target='_blank'
-           aria-label='Youtube'
-         >
-           <i class='fab fa-youtube' />
-         </Link>
-         <Link
-           class='social-icon-link twitter'
-           to='/'
-           target='_blank'
-           aria-label='Twitter'
-         >
-           <i class='fab fa-twitter' />
-         </Link>
-         <Link
-           class='social-icon-link twitter'
-           to='/'
-           target='_blank'
-           aria-label='LinkedIn'
-         >
-           <i class='fab fa-linkedin' />
-         </Link>
-       </div>
-     </div>
-   </section>
+     
  </div>
     )
   }

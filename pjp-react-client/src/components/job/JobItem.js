@@ -25,6 +25,8 @@ class JobItem extends Component {
             <div className="col-lg-6 col-md-4 col-8">
               <h3>{job.title}</h3>
               <p>{job.description}</p>
+              <p>{job.salary}</p> 
+             
             </div>
             <div className="col-md-4 d-none d-lg-block">
               <ul className="list-group">

@@ -6,7 +6,7 @@ const AddJobButton = () => {
     <React.Fragment>
       <div>
         <Link to="addJob" className="btn btn-lg btn-info">
-          Add Job
+          Add Job <span>+</span>
         </Link>
       </div>
     </React.Fragment>

@@ -37,7 +37,7 @@ class Landing extends Component {
                 }}
         </InfoConsumer>
         */}
-         </div>
+ </div>
          </div>   
            </div>   
 

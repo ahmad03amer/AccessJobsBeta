@@ -34,8 +34,9 @@ import FindJobs from "./components/page/FindJobs";
 import JobSeekers from "./components/page/JobSeekers";
 import Pricing from "./components/page/Pricing";
 import EmployerPostJob from "./components/page/EmployerPostJob";
-
-
+import Privacy from "./components/page/Privacy";
+import Disclaimer from "./components/page/Disclaimer";
+import TrnaingCourses from "./components/page/TrnaingCourses";
 
 
 
@@ -65,7 +66,9 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <div className="App">
+           
             <Header />
+            
             {
               //Public Routes
             }
@@ -82,6 +85,9 @@ class App extends Component {
             <Route exact path="/jobSeekers" component={JobSeekers} />
             <Route exact path="/pricing" component={Pricing} />
             <Route exact path="/employerPostJob" component={EmployerPostJob} />
+            <Route exact path="/Privacy" component={Privacy} />
+            <Route exact path="/Disclaimer" component={Disclaimer}/>
+            <Route exact path="/TrnaingCourses" component={TrnaingCourses}/>
            {/* <Route                               component={NotFoundPage}/> */} 
             {
               //Private Routes

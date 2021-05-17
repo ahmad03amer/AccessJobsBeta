@@ -5,6 +5,7 @@ import classnames from "classnames";
 import { login } from "../../actions/securityActions";
 import  "../../css/login.css";
 import log  from "../../picture/log.svg"; 
+import { Link } from 'react-router-dom';
 
 
 
@@ -53,7 +54,7 @@ class Login extends Component {
   render() {
     const { errors } = this.state;
     return (
-        <div className="App">
+       
       <div className="login">
         <div className="container-login">
       <div className="forms-container">
@@ -119,16 +120,21 @@ class Login extends Component {
             <p>
              User Account Login 
             </p>
-            <button className="btn-login transparent" id="sign-in-btn">
+            
+          <Link to="/register">  
+          <button 
+            className="btn-login transparent" 
+            id="sign-in-btn">
+              
               Sign UP
-            </button>
+            </button></Link>
           </div>
           <img src={log} className="image" alt="" />
         </div>
         
         </div>
       </div>
-      </div>
+      
    
     );
   }

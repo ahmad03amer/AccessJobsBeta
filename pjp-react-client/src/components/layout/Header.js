@@ -6,6 +6,8 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logout } from "../../actions/securityActions";
 
+import '../Page_Css/Nav.css';
+
 
 class Header extends Component {
 
@@ -22,7 +24,7 @@ class Header extends Component {
       <div className="collapse navbar-collapse" id="mobile-nav">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
-            <Link className="nav-link text-white" to="/dashboard">
+            <Link className="getstarted scrollto" to="/dashboard">
               Dashboard
             </Link>
           </li>
@@ -37,7 +39,7 @@ class Header extends Component {
           </li>
           <li className="nav-item">
             <Link
-              className="btn btn-outline-primary my-2 my-sm-0 ml-3"
+              className="getstarted scrollto"
               to="/logout"
               onClick={this.logout.bind(this)}
             >
@@ -53,12 +55,12 @@ class Header extends Component {
 
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <Link className="btn btn-outline-primary my-2 my-sm-1 mr-1" to="/register">
+            <Link className="getstarted scrollto" to="/register">
               Sign Up
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="btn btn-outline-primary my-2 my-sm-1 ml-3" to="/login">
+            <Link className="getstarted scrollto" to="/login">
               Login
             </Link>
 
@@ -76,57 +78,64 @@ class Header extends Component {
     }
 
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-dark " >
-        <div className="container-fluid">
-          <Link className="navbar-brand ml-1 "
-            href="#">
-            <img src={logo} alt="logo" style={{ width: '100px' }} />
-          </Link>
+      <nav className="navbar navbar-expand-lg navbar-light bg-dark sticky-top " >
+            <div className="container-fluid">
+              <Link className="logo d-flex align-items-center"
+                to="/">
+                <img src={logo} alt="logo" style={{ width: '100px' }} />
+              </Link>
+    
+              
 
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            {/*this is for the navigation bar"berger" to have a white color */}
-            <span>
-              <i className="fas fa-bars" style={{ color: '#ffffff' }}></i>
-            </span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mr-auto mb-2 mb-lg-0">
-              <li className="nav-item active">
-
-                <Link className="nav-link text-white ml-1 " aria-current="page" to="/">
-                  <i className="fas fa-home"></i>  Home&nbsp;<span className="sr-only">(current)</span>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link text-white  ml-2" to="/findJobs">Find Jobs</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link text-white  ml-2" to="/employerPostJob">Employer/Job Seekers</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link text-white  ml-2" to="/pricing">Pricing</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link text-white  ml-2" to="/blogs">Blogs</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link text-primary ml-2" to="/contactUs">Contact Us</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link text-primary ml-2" to="/aboutUs">About Us</Link>
-              </li>
-
-            </ul>
-
-          </div>
+    
+              <button
+                className="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                
+              >
+                {/*this is for the navigation bar"berger" to have a white color */}
+                <span>
+                  
+                  <i className="fas fa-bars" style={{ color: '#ffffff' }}></i>
+                </span>
+              </button>
+              <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul className="navbar-nav mr-auto mb-lg-0">
+                  <li className="nav-item ">
+    
+                    <Link className="nav-link text-white" aria-current="page" to="/">
+                      <i className="fas fa-home"></i>Home
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link text-white" to="/findJobs"><i class="fas fa-search"></i>Find Jobs</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link text-white" to="/employerPostJob"><i class="fas fa-briefcase"></i>Employer/Job Seekers</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link text-white" to="/pricing"><i class="fas fa-dollar-sign"></i>Pricing</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link text-white" to="/blogs"><i class="fas fa-blog"></i>Blogs</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link1 text-info" to="/contactUs"><i class="fas fa-address-card"></i>Contact Us</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link1 text-info" to="/aboutUs"><i class="fas fa-info-circle"></i>About Us</Link>
+                  </li>
+                  
+    
+                </ul>
+    
+              </div>
+            
           {headerLinks}
 
         </div>

@@ -19,6 +19,8 @@ class TextEditor extends Component {
     render() {
         const { editorState } = this.state;
         console.log(draftToHtml(convertToRaw(editorState.getCurrentContent())));
+
+        
         return (
             <div className="TextEditor">
               <Editor

@@ -12,6 +12,7 @@ const ContactUs = () => {
        <MDBRow>
   
        <MDBView>
+      
        <div className = "contact-bg">
         <h3>Get in Touch with Us</h3>
         <h2>contact us</h2>

@@ -11,7 +11,7 @@ import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
 import "../../css/register.css"; 
 import regitsterlog from "../../picture/register.svg"
-
+import{Link} from "react-router-dom";
 
 class Register extends Component {
   
@@ -283,10 +283,10 @@ class Register extends Component {
             <p className="fas fa-check-square">
              Register now and let employers match you to their jobs.
             </p>
-         
+         <Link to="login">
             <button className="btn-reg transparent" id="reg-sign-up-btn">
               Sign In
-            </button>
+            </button></Link>
           </div>
           <img src={regitsterlog} className="reg-image" alt="" />
         </div>

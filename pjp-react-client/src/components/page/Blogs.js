@@ -60,7 +60,7 @@ import blog1 from '../../picture/blog-1.jpg';
               <div className="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
                 <div className="count-box pb-5 pt-0 pt-lg-5">
                 <i className="fas fa-award mt-3"></i>
-                  <span data-purecounter-start="0" data-purecounter-end="22" className="purecounter">0</span>
+                  <span data-purecounter-start="0" data-purecounter-end="22" className="purecounter">16</span>
                   <p>Awards</p>
                 </div>
               </div>
@@ -81,7 +81,7 @@ import blog1 from '../../picture/blog-1.jpg';
             <p className="fst-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.
-            </p>
+            </p> 
             <ul>
               <li><i className="fas fa-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
               <li><i className="fas fa-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>

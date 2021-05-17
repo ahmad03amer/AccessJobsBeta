@@ -7,10 +7,11 @@ body,input {
 
 .container-login {
     margin: 0px 0 ;
+   
     position: relative;
     width: 100%;
     background-color: rgb(255, 255, 255);
-    min-height: 100vh;
+    min-height: 90vh;
     overflow: hidden;
   }
 
@@ -20,6 +21,7 @@ body,input {
   width: 100%;
   height: 100%;
   top: 0;
+  
   left: 0;
 }
 

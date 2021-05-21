@@ -111,7 +111,7 @@
   
   .section-title {
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
   }
   
   .section-title h2 {
@@ -120,7 +120,7 @@
     margin-bottom: 20px;
     padding-bottom: 0;
     font-family: "Poppins", sans-serif;
-    color: #646c55;
+    color: #e7b50e;
   }
   
   .section-title p {

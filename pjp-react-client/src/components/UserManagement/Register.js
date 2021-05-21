@@ -9,7 +9,7 @@ import ImageUploader from "./ImageUploader";
 import { CountryDropdown } from 'react-country-region-selector';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
-import "../../css/register.css"; 
+import "../../css2/register.css"; 
 import regitsterlog from "../../picture/register.svg"
 import{Link} from "react-router-dom";
 

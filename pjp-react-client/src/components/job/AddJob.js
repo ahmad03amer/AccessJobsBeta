@@ -126,6 +126,7 @@ class AddJob extends Component {
                             "is-invalid": errors.title,
         
                           })}
+                          
                           placeholder="Job Title"
                           name="title"
                           required="1"

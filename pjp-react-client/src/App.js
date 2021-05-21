@@ -1,5 +1,22 @@
 import React, { Component } from "react";
 import "./App.css";
+
+
+import './css/plugins.css';
+import './css/style.css';
+import './css/templete.css';
+import './css/skin/skin-1.css';
+import './plugins/slick/slick.min.css';
+import './plugins/slick/slick-theme.min.css';
+
+
+
+
+
+
+
+
+
 import Dashboard from "./components/Dashboard";
 import Header from "./components/Layout/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -37,6 +54,8 @@ import EmployerPostJob from "./components/page/EmployerPostJob";
 import Privacy from "./components/page/Privacy";
 import Disclaimer from "./components/page/Disclaimer";
 import TrnaingCourses from "./components/page/TrnaingCourses";
+import TermsOfUse from "./components/page/TermsOfUse";
+import Jobcvmanager from "./components/page/Jobcvmanager";
 
 
 
@@ -88,6 +107,10 @@ class App extends Component {
             <Route exact path="/Privacy" component={Privacy} />
             <Route exact path="/Disclaimer" component={Disclaimer}/>
             <Route exact path="/TrnaingCourses" component={TrnaingCourses}/>
+            <Route exact path="/TermsOfUse" component={TermsOfUse}/>
+            <Route exact path="/Jobcvmanager" component={Jobcvmanager}/>
+
+            
            {/* <Route                               component={NotFoundPage}/> */} 
             {
               //Private Routes

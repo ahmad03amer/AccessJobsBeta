@@ -2,7 +2,7 @@ import React , {  Component } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../../picture/Moh.svg";
 
-import "../../css/Footer.css"; 
+import "../../css2/Footer.css"; 
 
 
 
@@ -49,7 +49,7 @@ class Footer extends Component {
             <ul>
               <li><i className="fas fa-angle-right"></i> <Link to='/Privacy'>Privacy Policy</Link></li>
               <li><i className="fas fa-angle-right"></i> <Link to='/Disclaimer'>Disclaimer</Link></li>
-              <li><i className="fas fa-angle-right"></i> <Link to='/'>Job Description Database</Link></li>
+              <li><i className="fas fa-angle-right"></i> <Link to='/TermsOfUse'>Terms Of Use</Link></li>
               <li><i className="fas fa-angle-right"></i> <Link to='/'>Cv Templates Database</Link></li>
               <li><i className="fas fa-angle-right"></i> <Link to='/TrnaingCourses'>Training courses</Link></li>
             </ul>
@@ -80,11 +80,11 @@ class Footer extends Component {
 
 <div className="mr-md-auto text-center text-md-left">
   <div className="copyright">
-    &copy;. All Rights Reserved<strong>  <a className="ml-1">Access Job Team © 2021</a></strong>
+    &copy;. All Rights Reserved<strong><a className="ml-1">Access Job Team © 2021</a></strong>
   </div>
   <div className="credits">
    
-  <strong> <a>Designed by</a></strong>  <a href="https://Access Job.com/">Access Job Team</a>
+  <strong><a>Designed by</a></strong>  <a href="https://AccessJob.com/">Access Job Team</a>
   </div>
   <div className='footer-logo'>
     <Link to='/' className='social-logo'>

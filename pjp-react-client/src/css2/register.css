@@ -169,7 +169,7 @@ margin-bottom: 10px;
 }
 
 .btn-reg:hover {
-  background-color: #4d84e2;
+  background-color: #01225c;
 }
 
 .reg-social-text{
@@ -200,6 +200,7 @@ margin-bottom: 10px;
 .reg-social-icon:hover {
   color: #4481eb;
   border-color: #4481eb;
+  background-color: #4d84e2;
 }
 
 .reg-panels-container{
@@ -247,11 +248,17 @@ margin-bottom: 10px;
   margin: -6.5px;
   background: none;
   border: 2px solid rgb(255, 255, 255);
+  background-color: #464647;
   width: 130px;
   height: 41px;
   font-weight: 600;
   font-size: 0.8rem;
 }
+.btn-reg.transparent:hover{
+  background-color: #cc8d04;
+
+}
+
 
 .reg-image {
   width: 100%;

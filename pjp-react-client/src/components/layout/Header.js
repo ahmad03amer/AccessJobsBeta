@@ -118,18 +118,69 @@ class Header extends Component {
                   <li className="nav-item">
                     <Link className="nav-link text-white" to="/employerPostJob"><i class="fas fa-briefcase"></i>Employer/Job Seekers</Link>
                   </li>
-                  <li className="nav-item">
-                    <Link className="nav-link text-white" to="/pricing"><i class="fas fa-dollar-sign"></i>Pricing</Link>
+                 
+                  <li className="dropdown text-white ml-2">
+
+                    <Link className="nav-link text-white" to={""}>Blogs<i class="fas fa-angle-down"></i></Link>
+                    <ul>
+                    <li className="nav-item"><Link to="/blogs" className="nav-link text-white"><i class="fas fa-dollar-sign"></i>Classic</Link></li>
+											<li className="nav-item"><Link to={""} className="nav-link text-white"><i class="fas fa-dollar-sign"></i>Classic Sidebar</Link></li>
+											<li className="nav-item"><Link to={""} className="nav-link text-white"><i class="fas fa-dollar-sign"></i>Detailed Grid</Link></li>
+											<li className="nav-item"><Link to={""} className="nav-link text-white"><i class="fas fa-dollar-sign"></i>Detailed Grid Sidebar</Link></li>
+											<li className="nav-item"><Link to={""} className="nav-link text-white"><i class="fas fa-dollar-sign"></i>Left Image Sidebar</Link></li>
+											<li className="nav-item"><Link to={""} className="nav-link text-white"><i class="fas fa-dollar-sign"></i>Blog Details</Link></li>
+                    </ul>
                   </li>
-                  <li className="nav-item">
-                    <Link className="nav-link text-white" to="/blogs"><i class="fas fa-blog"></i>Blogs</Link>
+                 
+                  <li className="dropdown text-white ml-2"><i class="fas fa-clone"></i>Pages<i class="fas fa-angle-down"></i>
+                    <ul>
+                      <li className="nav-item">
+                      <Link className="nav-link text-white ml-1" to="/pricing"><i class="fas fa-dollar-sign"></i>Pricing</Link>
+
+                      </li>
+                      
+                      <li className="nav-item">
+                        <Link className="nav-link text-white" to="/TrnaingCourses"><i class="fas fa-book"></i>Training courses</Link>
+                      </li>
+                     
+                     
+                      <li className="nav-item">
+                      <Link className="nav-link text-white" to="/Jobcvmanager"><i class="fas fa-database"></i>CV Manager</Link>
+                      </li>
+                      
+
+                      <li className="dropdown text-danger ml-2">Terms Of Use<i class="fas fa-angle-double-left"></i>
+                        <ul>
+                          <li className="nav-item">
+                          <Link className="nav-link text-primary" to="/TermsOfUse"><i class="fas fa-balance-scale"></i>Terms Of Use</Link>
+                          </li>
+                          <li className="nav-item">
+                          <Link className="nav-link text-primary ml-1" to="/Privacy"><i class="fas fa-user-secret"></i>Privacy&Policy</Link>
+                          </li>
+                          <li className="nav-item">
+                          <Link className="nav-link text-primary" to="/Disclaimer"><i class="fas fa-people-arrows"></i>Disclaimer</Link>
+                          </li>
+                          
+                        </ul>
+                      </li>
+                    </ul>
                   </li>
+
+
+
+
+
+
+
+
+
                   <li className="nav-item">
                     <Link className="nav-link1 text-info" to="/contactUs"><i class="fas fa-address-card"></i>Contact Us</Link>
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link1 text-info" to="/aboutUs"><i class="fas fa-info-circle"></i>About Us</Link>
                   </li>
+                  
                   
     
                 </ul>

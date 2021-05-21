@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import classnames from "classnames";
 import { login } from "../../actions/securityActions";
-import  "../../css/login.css";
+import  "../../css2/login.css";
 import log  from "../../picture/log.svg"; 
 import { Link } from 'react-router-dom';
 
@@ -79,9 +79,10 @@ class Login extends Component {
               <i className="fas fa-lock"></i>
               <input type="password"   placeholder="Password"
               className={classnames("form-control-login", {
-                "is-invalid": errors.password,
+                "is-invalid": errors.password
               })}
               name="password"
+              id="exampleInputPassword1"
               value={this.state.password}
               onChange={this.onChange}
               />

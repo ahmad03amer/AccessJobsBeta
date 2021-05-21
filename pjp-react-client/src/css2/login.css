@@ -7,7 +7,6 @@ body,input {
 
 .container-login {
     margin: 0px 0 ;
-   
     position: relative;
     width: 100%;
     background-color: rgb(255, 255, 255);
@@ -33,7 +32,7 @@ body,input {
   width: 50%;
   transition: 1s 0.7s ease-in-out;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 4fr;
   z-index: 5;
 }
 
@@ -52,10 +51,12 @@ form {
 form.sign-up-form {
   opacity: 0;
   z-index: 1;
+  
 }
 
 form.sign-in-form {
   z-index: 2;
+  
 }
 
 
@@ -71,6 +72,7 @@ form.sign-in-form {
   grid-template-columns: 15% 85%;
   padding: 0 0.4rem;
   position: relative;
+  
 }
 
 .input-field i {
@@ -124,6 +126,7 @@ form.sign-in-form {
 .social-icon:hover {
   color: #4481eb;
   border-color: #4481eb;
+  background-color: #041d49;
 }
 
 .btn-login {
@@ -142,7 +145,7 @@ form.sign-in-form {
 }
 
 .btn-login:hover {
-  background-color: #4d84e2;
+  background-color: #001b4b;
 }
 .panels-container {
   position: absolute;
@@ -215,12 +218,15 @@ form.sign-in-form {
 
 .btn-login.transparent {
   margin: -7.5px;
-  background: rgb(0, 0, 0);
-  border: 2px solid rgb(61, 2, 2);
+  background: rgb(83, 83, 83);
+  border: 2px solid rgb(255, 255, 255);
   width: 130px;
   height: 41px;
   font-weight: 600;
   font-size: 0.8rem;
+}
+.btn-login.transparent:hover{
+  background-color: #f7ab07;
 }
 
 .right-panel .image,

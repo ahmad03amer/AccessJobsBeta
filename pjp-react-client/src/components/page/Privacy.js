@@ -65,7 +65,7 @@ class Privacy extends Component {
                                 </ul>
                                 
                                 <strong><h3 className="privacyh2">Collected information security</h3></strong>
-                                <p>In order to prevent any unauthorised access or disclosure of the personal information that we gather, we have in place electronic and managerial procedures to secure and guard these information.</p>
+                                <p>In order to prevent any unauthorized access or disclosure of the personal information that we gather, we have in place electronic and managerial procedures to secure and guard these information.</p>
                                 
                                 <h3 className="privacyh2">usage of cookies</h3>
                                 <p>A cookie is a small file which asks permission to be placed on your computer hard drive. Cookies allows websites to respond to you as an individual.</p>

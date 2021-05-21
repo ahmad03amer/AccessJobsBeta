@@ -22,7 +22,7 @@ class AboutUs extends Component {
             <div className="row content">
               <div className="col-lg-6">
                 <p>
-               <b> Accsess Jobs </b>site, Ramallah-Palestine, is the first site 
+               <b> Access Jobs </b>site, Ramallah-Palestine, is the first site 
                to be established at Birzeit University for employment or job search, 
                this site was established in 2021 as a home job site.
 
@@ -59,7 +59,7 @@ class AboutUs extends Component {
 
                 </p>
                 There is many employee and employer we will work to facilitate 
-                them to find and publishe a suitable job for them from home in light of the Corona pandemic .
+                them to find and published a suitable job for them from home in light of the Corona pandemic .
                 <p>
 
                 </p>
@@ -212,7 +212,7 @@ class AboutUs extends Component {
                   <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" className="collapsed"><span>04</span> What is the type of job in access jobs? <i class="fas fa-angle-double-down"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-4" className="collapse" data-bs-parent=".accordion-list">
                     <p>
-                    In access jobs have a many type of jobs like Full-time, Part-Time,By-Task jobs and have many catogry in it. 
+                    In access jobs have a many type of jobs like Full-time, Part-Time,By-Task jobs and have many category in it. 
                     </p>
                   </div>
                 </li>
@@ -251,7 +251,7 @@ class AboutUs extends Component {
             <div className="skills-content">
 
               <div className="progress">
-                <span className="skill">Remot Jobs <i className="val">90%</i></span>
+                <span className="skill">Remote Jobs <i className="val">90%</i></span>
                 <div className="progress-bar-wrap">
                   <div className="progress-bar1" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
@@ -310,7 +310,7 @@ class AboutUs extends Component {
           <div className="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div className="icon-box">
               <div className="icon"><i className="fad fa-file-user"></i></div>
-              <h4><Link to="/register"></Link>Create Account</h4>
+              <h4><Link to="/register">Create Account</Link></h4>
               <p>The registration is a one of services in our website, we have two types of registration to create an account, one of them is for the employee if he needs to apply to a job, and the other type is for employer 'company' you can register/sign-up now.</p>
             </div>
           </div>
@@ -318,7 +318,7 @@ class AboutUs extends Component {
           <div className="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div className="icon-box">
               <div className="icon"><i className="fad fa-file-search"></i></div>
-              <h4><a href="/">Find A jobs</a></h4>
+              <h4><Link to="/findJobs">Find A jobs</Link></h4>
               <p>Find A job it is one of the services of our website, you can easily find a job in many filed with many different of types like Full-time, Part-time, By-Task jobs by using the search engine on our web site, then you can apply and upload your CV for the suitable job you need. </p>
             </div>
           </div>
@@ -326,7 +326,7 @@ class AboutUs extends Component {
           <div className="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
             <div className="icon-box">
               <div className="icon"><i className="fas fa-upload"></i></div>
-              <h4><a href="/">Post A Jobs</a></h4>
+              <h4><Link to="/addJob">Post A Jobs</Link></h4>
               <p>Posting jobs the website provides the company, employer with a form for posting many jobs, in a different type like "Full-Time, Part-Time, By Task jobs" and many filed "Engineering, Accounting, Graphics etc..." of jobs.</p>
             </div>
           </div>
@@ -334,7 +334,7 @@ class AboutUs extends Component {
           <div className="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
             <div className="icon-box">
               <div className="icon"><i className="fab fa-blogger"></i></div>
-              <h4><a href="/">Blogs</a></h4>
+              <h4><a href="/Blogs">Blogs</a></h4>
               <p>On our site we display many articles that have great benefit for the user, so that whoever is looking for work can increase his chances of knowing to get a job, in addition to that there are many articles that show how to use the site</p>
             </div>
           </div>
@@ -450,7 +450,7 @@ class AboutUs extends Component {
               <div className="pic"><img src={malak} className="img-fluid" alt=""/></div>
               <div className="member-info">
                 <h4>Malak Ibrahim </h4>
-                <span>Front-End Develober</span>
+                <span>Front-End Developer</span>
                 <p>It is very nice to work for you so that you can get a job through our website</p>
                 
                 <div className="social">

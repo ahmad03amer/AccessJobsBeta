@@ -140,7 +140,9 @@
 	display:block;
 	width:100%;
 	color:#000;
-	font-size: 18px;
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: 20px;
 }
 .job-categories .icon-bx-wraper .icon-content{
 	position: relative;
@@ -157,7 +159,7 @@
 	text-align: right;
 }
 .job-categories .icon-bx-wraper:after {
-	/*background-image: url(../images/categories-bg.png);*/
+	background-image: url(../picture/categories-bg.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: bottom;
@@ -290,6 +292,7 @@
 	width: 100px;
 }
 .blog-carousel .blog-post{
+	
 	margin-bottom:0;
 }
 
@@ -639,9 +642,9 @@
 }
 .find-job-bx form{
 	padding: 30px 30px 5px 30px;
-	background-color: rgba(255,255,255,0.95);
+	background-color: rgb(255, 255, 255);
 	border-radius: 4px;
-	box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);	
 }
 .find-job-bx .input-group-text,
 .find-job-bx .form-control{
@@ -663,11 +666,11 @@
 	color: #000;
 	font-size: 15px;
 	position: absolute;
-	top: 10px;
+	top: 25px;
 	left: 0;
 	margin: 0;
 	font-family: rubik;
-	font-weight: 400;
+	font-weight: 500;
 	transition:all 0.5s;
 	-o-transition:all 0.5s;
 	-ms-transition:all 0.5s;
@@ -677,7 +680,8 @@
 .find-job-bx .form-group.focused label{
 	top: -12px;
 	font-size: 12px;
-	opacity:0.4;
+	font-weight: 500;
+	opacity:0.8;
 }
 .find-job-bx .input-group-text{
 	padding:0;
@@ -698,14 +702,16 @@
 	font-family: rubik;
 	color: #000;
 	font-size: 15px;
+	
 }
 .find-job-bx .bootstrap-select ul li{
 	font-size: 15px !important;
+	
 }
 .find-job-bx .bootstrap-select.btn-group .dropdown-toggle .caret{
 	top: 20px;
 	right: 0;
-	font-size: 12px;
+	font-size: 120px;
 }
 .find-job-bx .bootstrap-select.btn-group .dropdown-toggle .caret::before{
     content: "\f078";
@@ -747,7 +753,7 @@
 }
 .post-job-bx .post-bx{
 	padding:25px;
-	background-color:#fff;
+	background-color:rgb(236, 236, 236);
 	border-left: 5px solid #e1e7ff;
 	border-radius:4px;
 	box-shadow: 0 0 10px 0 rgba(0,24,128,0.1);
@@ -765,7 +771,7 @@
 	margin-bottom:0;
 }
 .post-job-bx > li:nth-of-type(2n+1) .post-bx{
-	background-color:#f9faff;
+	background-color:rgb(236, 236, 236);
 }
 .job-post-company span{
 	display: block;
@@ -781,6 +787,8 @@
 }
 .post-job-bx h4{
 	margin-bottom:10px;
+	font-size: 28px;
+	font-weight: 500;
 }
 .salary-bx span{
 	color:#000;
@@ -867,7 +875,7 @@
 
 /* Quote Box */
 .quote-bx{
-	/*background-image:url(../images/our-work/pic4.jpg);*/
+	background-image:url(./../picture/blog-1.jpg);
 	background-size:cover;
 	position:relative;
 	border-radius:4px;
@@ -2256,9 +2264,7 @@
 .btn-suport a span{
 	position: absolute;
 }
-.navbar-toggler:focus, .navbar-toggler:hover{
-	outline: none;
-}
+
 .browse-job .job-bx-title .float-right .custom-btn{
 	box-shadow: unset !important;
     border: 1px solid #e1e7ff !important;

@@ -337,6 +337,7 @@ strong {
 }
 .text-uppercase {
     text-transform: uppercase
+    
 }
 .text-capitalize {
     text-transform: capitalize
@@ -459,7 +460,8 @@ strong {
 /*text weight*/
 
 .fw3 {
-    font-weight: 300;
+    font-weight: 500;
+    font-size: 16px;
 }
 .fw4 {
     font-weight: 400;
@@ -919,9 +921,12 @@ dl dd {
 
 .m-b0 {
     margin-bottom: 0;
+    font-weight: 400;
 }
 .m-b5 {
     margin-bottom: 5px;
+    font-weight: 450;
+    color: #fac21b;
 }
 .m-b10 {
     margin-bottom: 10px;
@@ -1388,6 +1393,8 @@ dl dd {
 /*=== >background image ===*/
 
 .bg-img-fix {
+    background-image: url(./../picture/bg4.jpg);
+
     background-attachment: fixed;
 	background-size: cover;
 }
@@ -2934,10 +2941,7 @@ blockquote:before {
     .is-fixed.header-curve .logo-header a img {
         vertical-align: sub;
     }
-	.site-header .navbar-toggler,
-	.site-header .is-fixed .navbar-toggler{
-		 margin: 18px 0 14px 10px;
-	}
+	
 	.site-header .extra-nav,
 	.site-header .is-fixed .extra-nav{
 		padding: 11px 0;
@@ -2991,19 +2995,7 @@ blockquote:before {
 ---------------------------------------------------------------*/
 /*== >mena-menu ==*/
 
-.navbar-toggler {
-    border: 0 solid #efbb20;
-    font-size: 16px;
-    line-height: 24px;
-    margin: 32px 0 30px 10px;
-    padding: 0;
-}
-.navbar-toggler span {
-    background: #666;
-}
-.is-fixed .navbar-toggler {
-    margin:28px 0 20px 10px;
-}
+
 .header-nav {
     position: relative;
     padding: 0;
@@ -3341,9 +3333,7 @@ blockquote:before {
 		z-index: 2;
 		position:relative;
 	}
-	.navbar-toggler{
-		float: right;
-	}
+	
 	.site-header.center.mo-left .header-nav .logo-header{
 		padding: 20px 15px;
 	}
@@ -3752,12 +3742,7 @@ blockquote:before {
 [class*="bg-"] .header-nav .nav > li:hover > a {
     color: #fff;
 }
-[class*="bg-"] .navbar-toggler {
-    border-color: #fff;
-}
-[class*="bg-"] .navbar-toggler span {
-    background-color: #fff;
-}
+
 @media only screen and (max-width: 991px) {
     [class*="bg-"] .header-nav .nav > li > a {
         color: #555;
@@ -4735,7 +4720,8 @@ blockquote:before {
 }
 .dez-post-title .post-title {
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
+    font-weight: 500;
 }
 .dez-post-meta {
     margin-bottom: 10px;
@@ -6242,7 +6228,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 .panel-group .panel,
 .nav-tabs > li > a,
 .modal-content,
-.navbar-toggler,
+
 .nav-pills > li > a,
 .pager li > a,
 .pager li > span,
@@ -6285,7 +6271,7 @@ a,
 .how-dez-work .dez-box .step-no-bx,
 .dez-info-has,
 .dez-we-find .dez-box,
-.navbar-toggler,
+
 .logo-header,
 .header-nav .nav > li > a,
 .extra-nav,
@@ -11196,6 +11182,7 @@ footer.footer-white .footer-bottom a {
 
 .section-head {
     margin-bottom: 50px;
+    
 }
 .section-head.m-b30 {
     margin-bottom: 30px;
@@ -12638,6 +12625,7 @@ ol.commentlist li .star-rating {
 	}
 	.blog-carousel .blog-post{
 		margin-bottom:0;
+        
 	}
 	.blog-post{
 		margin-bottom:30px;
@@ -13007,34 +12995,7 @@ ol.commentlist li .star-rating {
 	.mo-left .is-fixed .header-nav .nav{
 		height:auto;
 	}
-	.mo-left .navbar-toggler.open:after{
-		background-color: rgba(0, 0, 0, 0.6);
-		content: "";
-		height: 100%;
-		left: 0;
-		position: fixed;
-		right: 0;
-		top: 0;
-		transform: scale(100);
-		-o-transform: scale(100);
-		-moz-transform: scale(100);
-		-webkit-transform: scale(100);
-		width: 100%;
-		z-index: -1;
-		transition:all 0.5s;
-		-webkit-transition:all 0.5s;
-		-ms-transition:all 0.5s;
-		-o-transition:all 0.5s;
-		-moz-transition:all 0.5s;
-		transform-origin: right;
-		-webkit-transform-origin: right;
-		-ms-transform-origin: right;
-		-o-transform-origin: right;
-		-moz-transform-origin: right;
-		box-shadow:0 0 0 500px rgba(0,0,0,0.6);
-		-webkit-box-shadow:0 0 0 500px rgba(0,0,0,0.6);
-		-moz-box-shadow:0 0 0 500px rgba(0,0,0,0.6);
-	}
+	
 	.mo-left .header-nav .logo-header {
 		display: block;
 		float: none;
@@ -13047,9 +13008,7 @@ ol.commentlist li .star-rating {
 		max-width: unset;
 		width: 130px;
 	}
-	.mo-left .navbar-toggler.open span{
-		background:#fff;
-	}
+	
 }
 
 /* 	Hover Effects 

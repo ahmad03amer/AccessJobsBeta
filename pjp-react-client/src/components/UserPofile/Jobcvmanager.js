@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
-import blog from "../../picture/about.jpg";
 import Malak from "../../picture/mlk.jpg";
 
 
@@ -47,25 +46,25 @@ class Jobcvmanager extends Component{
 														</div>
 													</div>
 													<ul>
-														<li><Link to={"/jobs-profile"}>
+														<li><Link to="/Jobprofile">
 															<i className="fa fa-user-o" aria-hidden="true"></i> 
 															<span>Profile</span></Link></li>
-														<li><Link to={"/jobs-my-resume"}>
+														<li><Link to="/Jobmyresume">
 															<i className="fa fa-file-text-o" aria-hidden="true"></i> 
 															<span>My Resume</span></Link></li>
-														<li><Link to={"/jobs-saved-jobs"}>
+														<li><Link to="/Jobsavedjobs">
 															<i className="fa fa-heart-o" aria-hidden="true"></i> 
 															<span>Saved Jobs</span></Link></li>
 														<li><Link to={"/jobs-applied-job"}>
 															<i className="fa fa-briefcase" aria-hidden="true"></i> 
 															<span>Applied Jobs</span></Link></li>
-														<li><Link to={"/jobs-alerts"}>
+														<li><Link to="/Jobsalert">
 															<i className="fa fa-bell-o" aria-hidden="true"></i> 
 															<span>Job Alerts</span></Link></li>
-														<li><Link to={"/jobs-cv-manager"} className="active">
+														<li><Link to="/Jobcvmanager"  className="active">
 															<i className="fa fa-id-card-o" aria-hidden="true"></i> 
 															<span>CV Manager</span></Link></li>
-														<li><Link to={"/jobs-change-password"}>
+														<li><Link to="/Changepasswordpage">
 															<i className="fa fa-key" aria-hidden="true"></i> 
 															<span>Change Password</span></Link></li>
 														<li><Link to={"./"}>

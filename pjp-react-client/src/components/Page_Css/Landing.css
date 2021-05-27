@@ -1,28 +1,5 @@
 
-/*-------------------------------------------------------------------------------------
---- [Table of Content] ---
-01. Fonts
-02. Global Css
-03. Preloader
 
-05. Home Section
-06. Video Popup
-07. Features Section
-08. Fun Facts Section
-09. App Screenshots Section
-10. App Download Section
-11. How It Works Section
-12. Testomonial Section
-13. Pricing section
-14. Team Section
-15. Faq Section
-16. Contact Section
-
-18. Toggle Theme - Light & Dark Mode
-19. Responsive
-
--------------------------------------------------------------------------------------
-*/
 
 /*------------
 01. Fonts
@@ -72,11 +49,12 @@ img{
 ul{
 	list-style: none;
 }
+
 .btn-1{
 	background-color: #ffffff;
 	padding: 12px 30px;
 	border:none;
-	border-radius: 30px;
+	border-radius: 50px;
 	background: #ffffff;
 	color: var(--main-color);
 	font-size: 20px;
@@ -155,9 +133,9 @@ ul{
 	z-index: -1;
 }
 .effect-wrap .effect-1{
-	left:20%;
-	top:20%;
-	font-size: 26px;
+	left:30%;
+	top:25.5%;
+	font-size: 30px;
 	color: var(--color-2);
 	animation: spin_01 5s linear infinite;
 }
@@ -169,17 +147,19 @@ ul{
 	animation: spin_01 7s linear infinite;
 }
 .effect-wrap .effect-3{
-	left:5%;
+	top:43%;
+	left:6%;
 	bottom:30%;
 	font-size: 30px;
 	color: var(--color-3);
 	animation: bounceTop_01 3s linear infinite;
 }
 .section-padding{
+	
 	padding: 80px 0;
 }
 .section-title{
-	margin-bottom: 60px;
+	margin-bottom: 10px;
 }
 .section-title h2{
 	font-size: 40px;
@@ -599,6 +579,7 @@ ul{
 	text-align: center;
 	position: relative;
 	z-index: 1;
+	
 }
 .how-it-works-item.line-right::before{
 	content: '';
@@ -621,7 +602,7 @@ ul{
 	border-radius: 50%;
 	color: #ffffff;
 	font-weight: 500;
-	margin:0 0 15px;
+	
 }
 .how-it-works-item h3{
 	margin:20px 0;

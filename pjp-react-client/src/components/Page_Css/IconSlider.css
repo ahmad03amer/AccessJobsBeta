@@ -1,0 +1,30 @@
+.Box {
+    
+    border: 5px black;
+  }
+  
+  .Box_content {
+    font-size: 16px;
+    text-align: center;
+  }
+  .iconsize{
+
+    width: 160px;
+    height:100px
+  } 
+  .gg{
+      margin-left: 50px;
+      margin-top: 10px;
+      block-size: 50%;
+  }
+
+  @media (max-width: 600px) {
+    .iconsize{
+
+    width:80px;
+    height:70px;
+
+    }
+
+      
+  }

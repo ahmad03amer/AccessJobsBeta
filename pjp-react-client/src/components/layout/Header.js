@@ -31,12 +31,21 @@ class Header extends Component {
         </ul>
 
         <ul className="navbar-nav ml-auto">
-          <li className="nav-item">
-            <Link className="nav-link text-white" to="/dashboard">
-              <i className="fas fa-user-circle mr-1" />
-              {user.fullName}
-            </Link>
+          <li className="dropdown text-white"><i className="fas fa-user-circle" />
+              {user.fullName}<i class="fas fa-angle-down ml-1"></i>
+            
+            <ul>
+                    <li className="nav-item"><Link to="/Jobprofile" className="nav-link text-white"><i class="fas fa-dollar-sign"></i>Profile</Link></li>
+											<li className="nav-item"><Link to="/Jobmyresume" className="nav-link text-white"><i class="fas fa-dollar-sign"></i>My Resume</Link></li>
+											<li className="nav-item"><Link to="/Jobsavedjobs" className="nav-link text-white"><i class="fas fa-dollar-sign"></i>Saved Jobs</Link></li>
+											<li className="nav-item"><Link to="/Jobsalert" className="nav-link text-white"><i class="fas fa-dollar-sign"></i>Job Alerts</Link></li>
+											<li className="nav-item"><Link to="/Jobcvmanager" className="nav-link text-white"><i class="fas fa-dollar-sign"></i>CV Manager</Link></li>
+											<li className="nav-item"><Link to="/Changepasswordpage" className="nav-link text-white"><i class="fas fa-dollar-sign"></i>Change Password</Link></li>
+                      <li className="nav-item"><Link to="/logout"  onClick={this.logout.bind(this)} className="nav-link text-white"><i class="fas fa-dollar-sign"></i>Log Out</Link></li>
+
+                    </ul>
           </li>
+          
           <li className="nav-item">
             <Link
               className="getstarted scrollto"
@@ -46,6 +55,7 @@ class Header extends Component {
               Logout
             </Link>
           </li>
+          
         </ul>
       </div>
     );
@@ -58,6 +68,7 @@ class Header extends Component {
             <Link className="getstarted scrollto" to="/register">
               Sign Up
             </Link>
+            
           </li>
           <li className="nav-item">
             <Link className="getstarted scrollto" to="/login">
@@ -87,7 +98,7 @@ class Header extends Component {
     
               
 
-    
+              
               <button
                 className="navbar-toggler"
                 type="button"
@@ -119,9 +130,8 @@ class Header extends Component {
                     <Link className="nav-link text-white" to="/employerPostJob"><i class="fas fa-briefcase"></i>Employer/Job Seekers</Link>
                   </li>
                  
-                  <li className="dropdown text-white ml-2">
+                  <li className="dropdown text-white ml-2 mr-1"><i class="fas fa-clone"></i>Blogs<i class="fas fa-angle-down"></i>
 
-                    <Link className="nav-link text-white" to={""}>Blogs<i class="fas fa-angle-down"></i></Link>
                     <ul>
                     <li className="nav-item"><Link to="/blogs" className="nav-link text-white"><i class="fas fa-dollar-sign"></i>Classic</Link></li>
 											<li className="nav-item"><Link to={""} className="nav-link text-white"><i class="fas fa-dollar-sign"></i>Classic Sidebar</Link></li>
@@ -147,8 +157,6 @@ class Header extends Component {
                       <li className="nav-item">
                       <Link className="nav-link text-white" to="/Jobcvmanager"><i class="fas fa-database"></i>CV Manager</Link>
                       </li>
-                      
-
                       <li className="dropdown text-danger ml-2">Terms Of Use<i class="fas fa-angle-double-left"></i>
                         <ul>
                           <li className="nav-item">

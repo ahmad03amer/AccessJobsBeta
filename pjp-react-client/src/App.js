@@ -55,7 +55,18 @@ import Privacy from "./components/page/Privacy";
 import Disclaimer from "./components/page/Disclaimer";
 import TrnaingCourses from "./components/page/TrnaingCourses";
 import TermsOfUse from "./components/page/TermsOfUse";
-import Jobcvmanager from "./components/page/Jobcvmanager";
+
+
+
+
+import Jobmyresume from "./components/UserPofile/Jobmyresume";
+import Jobprofile from "./components/UserPofile/Jobprofile";
+import Jobcvmanager from "./components/UserPofile/Jobcvmanager";
+import Jobsalert from "./components/UserPofile/Jobsalert";
+import Jobsavedjobs from "./components/UserPofile/Jobsavedjobs";
+
+import Changepasswordpage from "./components/UserPofile/Changepasswordpage";
+
 
 
 
@@ -108,8 +119,16 @@ class App extends Component {
             <Route exact path="/Disclaimer" component={Disclaimer}/>
             <Route exact path="/TrnaingCourses" component={TrnaingCourses}/>
             <Route exact path="/TermsOfUse" component={TermsOfUse}/>
-            <Route exact path="/Jobcvmanager" component={Jobcvmanager}/>
 
+
+
+            <Route exact path="/Jobmyresume" component={Jobmyresume}/>
+            <Route exact path="/Jobprofile" component={Jobprofile}/>
+            <Route exact path="/Jobcvmanager" component={Jobcvmanager}/>
+            <Route exact path="/Jobsalert" component={Jobsalert}/>
+            <Route exact path="/Jobsavedjobs" component={Jobsavedjobs}/>
+            <Route exact path="/Changepasswordpage" component={Changepasswordpage}/>
+         
             
            {/* <Route                               component={NotFoundPage}/> */} 
             {

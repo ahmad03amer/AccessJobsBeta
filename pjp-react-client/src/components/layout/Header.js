@@ -160,13 +160,34 @@ class Header extends Component {
                       <li className="dropdown text-danger ml-2">Terms Of Use<i class="fas fa-angle-double-left"></i>
                         <ul>
                           <li className="nav-item">
-                          <Link className="nav-link text-primary" to="/TermsOfUse"><i class="fas fa-balance-scale"></i>Terms Of Use</Link>
+                          <Link className="nav-link text-white" to="/TermsOfUse"><i class="fas fa-balance-scale"></i>Terms Of Use</Link>
                           </li>
                           <li className="nav-item">
-                          <Link className="nav-link text-primary ml-1" to="/Privacy"><i class="fas fa-user-secret"></i>Privacy&Policy</Link>
+                          <Link className="nav-link text-white ml-1" to="/Privacy"><i class="fas fa-user-secret"></i>Privacy&Policy</Link>
                           </li>
                           <li className="nav-item">
-                          <Link className="nav-link text-primary" to="/Disclaimer"><i class="fas fa-people-arrows"></i>Disclaimer</Link>
+                          <Link className="nav-link text-white" to="/Disclaimer"><i class="fas fa-people-arrows"></i>Disclaimer</Link>
+                          </li>
+                          
+                        </ul>
+                      </li>
+                      <li className="dropdown text-primary ml-2">Job<i class="fas fa-angle-double-left"></i>
+                        <ul>
+                          <li className="nav-item">
+                          <Link className="nav-link text-white" to="/category-all-jobs"><i class="fas fa-sitemap"></i> all jobs</Link>
+                          </li>
+                          <li className="nav-item">
+                          <Link className="nav-link text-white ml-1" to="/category-company-jobs"><i class="fas fa-building"></i> company jobs</Link>
+                          </li>
+                          <li className="nav-item">
+                          <Link className="nav-link text-white" to="/category-designations-jobs"> <i class="fas fa-user-plus"></i> designations jobs</Link>
+                          </li>
+                          <li className="nav-item">
+                          <Link className="nav-link text-white" to="/category-jobs"> <i class="fas fa-award"></i> category jobs</Link>
+                          </li> <li className="nav-item">
+                          <Link className="nav-link text-white" to="/category-location-jobs"><i class="fas fa-location-arrow"></i> location jobs</Link>
+                          </li> <li className="nav-item">
+                          <Link className="nav-link text-white" to="/category-skill-jobs"> <i class="fas fa-futbol"></i> skill jobs</Link>
                           </li>
                           
                         </ul>

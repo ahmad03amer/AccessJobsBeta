@@ -67,6 +67,12 @@ import Jobsavedjobs from "./components/UserPofile/Jobsavedjobs";
 
 import Changepasswordpage from "./components/UserPofile/Changepasswordpage";
 
+import Categoryalljob from "./components/jobSide/Categoryalljob";
+import Categorycompanyjob from "./components/jobSide/Categorycompanyjob";
+import Categorydesignationsjob from "./components/jobSide/Categorydesignationsjob";
+import Categoryjobs from "./components/jobSide/Categoryjobs";
+import Categorylocationjobs from "./components/jobSide/Categorylocationjobs";
+import Categoryskilljobs from "./components/jobSide/Categoryskilljobs";
 
 
 
@@ -119,6 +125,18 @@ class App extends Component {
             <Route exact path="/Disclaimer" component={Disclaimer}/>
             <Route exact path="/TrnaingCourses" component={TrnaingCourses}/>
             <Route exact path="/TermsOfUse" component={TermsOfUse}/>
+
+            {/* job section */}
+            <Route path='/category-all-jobs' exact component={Categoryalljob} />
+            <Route path='/category-company-jobs' exact component={Categorycompanyjob} />
+						<Route path='/category-designations-jobs' exact component={Categorydesignationsjob} />
+						<Route path='/category-jobs' exact component={Categoryjobs} />
+						<Route path='/category-location-jobs' exact component={Categorylocationjobs} />
+						<Route path='/category-skill-jobs' exact component={Categoryskilljobs} />
+
+
+
+
 
 
 

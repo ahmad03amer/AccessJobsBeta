@@ -5,12 +5,12 @@ import Malak from "../../picture/mlk.jpg";
 
 
 const managerBlog = [
-	{ image: require('../../picture/course1.jpg'), title:'Alexander Weir', },
-	{ image: require('../../picture/course1.jpg'), title:'Jennifer Wood', },
-	{ image: require('../../picture/course1.jpg'), title:'Melissa Hassib', },
-	{ image: require('../../picture/course1.jpg'), title:'Joseph Macfarlan', },
-	{ image: require('../../picture/course1.jpg'), title:'Henry Crooks', },
-	{ image: require('../../picture/course1.jpg'), title:'James Rogers', },
+	{ image: require('../../picture/mlk.jpg').default, title:'Malak Ibrahim', location:'Palestine,Slafit, Bedaya', typeJob:'Full-Time', TimePost:'1 days', },
+	{ image: require('../../picture/ahmad1.jpg').default, title:'Ahmad Amr', location:'Palestine,Slafit, Masha', typeJob:'Full-Time,Part-Time', TimePost:'2 days', },
+	{ image: require('../../picture/mohy.jpg').default, title:'Mohye Ahmad', location:'Palestine,Ramallah, Der-Alsodan', typeJob:'By-Contract', TimePost:'5 days', },
+	{ image: require('../../picture/arkan.jpg').default, title:'Ayman Salman', location:'Palestine,Ramallah, Der-Alsodan', typeJob:'Full-Time, By-Contract', TimePost:'10 days', },
+	{ image: require('../../picture/T.jpeg').default, title:'Mohammad Gabin', location:'Palestine,Ramallah, Abo-Fallah', typeJob:'Part-Time', TimePost:'12 days', },
+	{ image: require('../../picture/arkan.jpg').default, title:'Arkan Saleh', location:'Palestine,Qalqilya, Jayyous', typeJob:'Full-Time', TimePost:'14 days', },
 ]
 
 class Jobcvmanager extends Component{
@@ -100,9 +100,9 @@ class Jobcvmanager extends Component{
 																<div className="job-post-info">
 																	<h6><Link to={""}>{item.title}</Link></h6>
 																	<ul>
-																		<li><i className="fa fa-map-marker"></i> Sacramento, California</li>
-																		<li><i className="fa fa-bookmark-o"></i> Full Time</li>
-																		<li><i className="fa fa-clock-o"></i> 11 days ago</li>
+																		<li><i className="fa fa-map-marker"></i>{item.location}</li>
+																		<li><i className="fa fa-bookmark-o"></i>{item.typeJob}</li>
+																		<li><i className="fa fa-clock-o"></i>{item.TimePost}</li>
 																	</ul>
 																</div>
 															</div>

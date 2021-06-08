@@ -12,6 +12,144 @@ class AboutUs extends Component {
   render() {
     return (
       <div>
+
+
+        {/*   <!-- ======= Team Section ======= -->*/}
+    <section id="team" className="team section-bg mb-5 mt-5">
+      <div className="container" data-aos="fade-up">
+
+        <div className="section-title">
+          <h2>Team oF Access Jobs</h2>
+          <p>We have made a lot of effort to make efforts for this optimal site for every place, and for it to be the best for you to find a suitable fit that meets your needs through the home</p>
+        </div>
+
+        <div className="row">
+
+          <div className="col-lg-6">
+            <div className="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div className="pic"><img src={abd} className="img-fluid" alt=""/></div>
+              <div className="member-info">
+                <h4>Abdellatif Abu-Issa</h4>
+                <span>Superviser</span>
+                <p>It was my pleasure to be the supervisor of the creation of this site</p>
+                <div className="social">
+                      <a href="/">
+                        <i className="fa fa-facebook"></i>
+                      </a>
+                      <a href="/">
+                        {" "}
+                        <i className="fa fa-twitter"></i>
+                      </a>
+                      <a href="/">
+                        {" "}
+                        <i className="fa fa-linkedin"></i>
+                      </a>
+                      <a href="/">
+                        {" "}
+                        <i className="fa fa-google-plus"></i>
+                      </a>
+                      
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-6 mt-4 mt-lg-0">
+            <div className="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+              <div className="pic"><img src={ahmad} className="img-fluid" alt=""/></div>
+              <div className="member-info">
+                <h4>Ahmad Amer </h4>
+                <span>Back-End Developer</span>
+                <p>It is very nice to work for you so that you can get a job through our website</p>
+                <div className="social">
+                      <a href="/">
+                        <i className="fa fa-facebook"></i>
+                      </a>
+                      <a href="/">
+                        {" "}
+                        <i className="fa fa-twitter"></i>
+                      </a>
+                      <a href="/">
+                        {" "}
+                        <i className="fa fa-linkedin"></i>
+                      </a>
+                      <a href="/">
+                        {" "}
+                        <i className="fa fa-google-plus"></i>
+                      </a>
+                      
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-6 mt-4">
+            <div className="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div className="pic"><img src={mohy} className="img-fluid" alt=""/></div>
+              <div className="member-info">
+                <h4>Mohye Ahmad</h4>
+                <span>DevOps</span>
+                <p>It is very nice to work for you so that you can get a job through our website</p>
+                <div className="social">
+                      <a href="/">
+                        <i className="fa fa-facebook"></i>
+                      </a>
+                      <a href="/">
+                        {" "}
+                        <i className="fa fa-twitter"></i>
+                      </a>
+                      <a href="/">
+                        {" "}
+                        <i className="fa fa-linkedin"></i>
+                      </a>
+                      <a href="/">
+                        {" "}
+                        <i className="fa fa-google-plus"></i>
+                      </a>
+                      
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-6 mt-4">
+            <div className="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+              <div className="pic"><img src={malak} className="img-fluid" alt=""/></div>
+              <div className="member-info">
+                <h4>Malak Ibrahim </h4>
+                <span>Front-End Developer</span>
+                <p>It is very nice to work for you so that you can get a job through our website</p>
+                
+                <div className="social">
+                      <a href="/">
+                        <i className="fa fa-facebook"></i>
+                      </a>
+                      <a href="/">
+                        {" "}
+                        <i className="fa fa-twitter"></i>
+                      </a>
+                      <a href="/">
+                        {" "}
+                        <i className="fa fa-linkedin"></i>
+                      </a>
+                      <a href="/">
+                        {" "}
+                        <i className="fa fa-google-plus"></i>
+                      </a>
+                      
+                    </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    
+    
+    
+    {/*<!-- End Team Section --> */}
         {/*  ======= About Us Section ======= -->*/}
         <section id="about" className="about">
           <div className="container" data-aos="fade-up">
@@ -183,7 +321,7 @@ class AboutUs extends Component {
             <div className="accordion-list">
               <ul>
                 <li>
-                  <a data-bs-toggle="collapse" className="collapse" data-bs-target="#accordion-list-1"><span>01</span>Provides efficient recruitment services? <i class="fas fa-angle-double-down"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <Link data-bs-toggle="collapse" className="collapse" data-bs-target="#accordion-list-1"><span>01</span>Provides efficient recruitment services? <i class="fas fa-angle-double-down"></i><i class="bx bx-chevron-up icon-close"></i></Link>
                   <div id="accordion-list-1" className="collapse show" data-bs-parent=".accordion-list">
                     <p>
                    Access Jobs provides effective recruitment services for companies and institutions by posting jobs through their recruitment platform. We will help and we want to help thousands of international and local institutions, private and government companies, and our partners to promote their jobs that they are looking for an employee for.
@@ -192,7 +330,7 @@ class AboutUs extends Component {
                 </li>
 
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" className="collapsed"><span>02</span> What distinguishes Access Jobs from other sites? <i class="fas fa-angle-double-down"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <Link data-bs-toggle="collapse" data-bs-target="#accordion-list-2" className="collapsed"><span>02</span> What distinguishes Access Jobs from other sites? <i class="fas fa-angle-double-down"></i><i class="bx bx-chevron-up icon-close"></i></Link>
                   <div id="accordion-list-2" className="collapse" data-bs-parent=".accordion-list">
                     <p>
                     What distinguishes Access Jobs from others is the type and difference of jobs, the manner of applying for these jobs displayed on the site, the number of employment applications that we send to the employer upon announcing a job, in addition to the professional service enjoyed by the Access Jobs staff.
@@ -201,7 +339,7 @@ class AboutUs extends Component {
                 </li>
 
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" className="collapsed"><span>03</span> What is the difference from other sites in posting jobs? <i class="fas fa-angle-double-down"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <Link data-bs-toggle="collapse" data-bs-target="#accordion-list-3" className="collapsed"><span>03</span> What is the difference from other sites in posting jobs? <i class="fas fa-angle-double-down"></i><i class="bx bx-chevron-up icon-close"></i></Link>
                   <div id="accordion-list-3" className="collapse" data-bs-parent=".accordion-list">
                     <p>
                     Access job it has the simplest way to post the job with different type,and have an easier way to apply for any job, then connect with the company.
@@ -209,7 +347,7 @@ class AboutUs extends Component {
                   </div>
                 </li>
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" className="collapsed"><span>04</span> What is the type of job in access jobs? <i class="fas fa-angle-double-down"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <Link data-bs-toggle="collapse" data-bs-target="#accordion-list-4" className="collapsed"><span>04</span> What is the type of job in access jobs? <i class="fas fa-angle-double-down"></i><i class="bx bx-chevron-up icon-close"></i></Link>
                   <div id="accordion-list-4" className="collapse" data-bs-parent=".accordion-list">
                     <p>
                     In access jobs have a many type of jobs like Full-time, Part-Time,By-Task jobs and have many category in it. 
@@ -347,142 +485,7 @@ class AboutUs extends Component {
     {/*<!-- End Services Section --> */}
 
 
-  {/*   <!-- ======= Team Section ======= -->*/}
-    <section id="team" className="team section-bg mb-5 mt-5">
-      <div className="container" data-aos="fade-up">
-
-        <div className="section-title">
-          <h2>Team oF Access Jobs</h2>
-          <p>We have made a lot of effort to make efforts for this optimal site for every place, and for it to be the best for you to find a suitable fit that meets your needs through the home</p>
-        </div>
-
-        <div className="row">
-
-          <div className="col-lg-6">
-            <div className="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div className="pic"><img src={abd} className="img-fluid" alt=""/></div>
-              <div className="member-info">
-                <h4>Abdellatif Abu-Issa</h4>
-                <span>Superviser</span>
-                <p>It was my pleasure to be the supervisor of the creation of this site</p>
-                <div className="social">
-                      <a href="/">
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                      <a href="/">
-                        {" "}
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                      <a href="/">
-                        {" "}
-                        <i className="fa fa-linkedin"></i>
-                      </a>
-                      <a href="/">
-                        {" "}
-                        <i className="fa fa-google-plus"></i>
-                      </a>
-                      
-                    </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-6 mt-4 mt-lg-0">
-            <div className="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-              <div className="pic"><img src={ahmad} className="img-fluid" alt=""/></div>
-              <div className="member-info">
-                <h4>Ahmad Amer </h4>
-                <span>Back-End Developer</span>
-                <p>It is very nice to work for you so that you can get a job through our website</p>
-                <div className="social">
-                      <a href="/">
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                      <a href="/">
-                        {" "}
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                      <a href="/">
-                        {" "}
-                        <i className="fa fa-linkedin"></i>
-                      </a>
-                      <a href="/">
-                        {" "}
-                        <i className="fa fa-google-plus"></i>
-                      </a>
-                      
-                    </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-6 mt-4">
-            <div className="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div className="pic"><img src={mohy} className="img-fluid" alt=""/></div>
-              <div className="member-info">
-                <h4>Mohye Ahmad</h4>
-                <span>DevOps</span>
-                <p>It is very nice to work for you so that you can get a job through our website</p>
-                <div className="social">
-                      <a href="/">
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                      <a href="/">
-                        {" "}
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                      <a href="/">
-                        {" "}
-                        <i className="fa fa-linkedin"></i>
-                      </a>
-                      <a href="/">
-                        {" "}
-                        <i className="fa fa-google-plus"></i>
-                      </a>
-                      
-                    </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-6 mt-4">
-            <div className="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-              <div className="pic"><img src={malak} className="img-fluid" alt=""/></div>
-              <div className="member-info">
-                <h4>Malak Ibrahim </h4>
-                <span>Front-End Developer</span>
-                <p>It is very nice to work for you so that you can get a job through our website</p>
-                
-                <div className="social">
-                      <a href="/">
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                      <a href="/">
-                        {" "}
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                      <a href="/">
-                        {" "}
-                        <i className="fa fa-linkedin"></i>
-                      </a>
-                      <a href="/">
-                        {" "}
-                        <i className="fa fa-google-plus"></i>
-                      </a>
-                      
-                    </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    
-    
-    
-    {/*<!-- End Team Section --> */}
+  
 
 
     <section id="cta" className="cta mt-5">

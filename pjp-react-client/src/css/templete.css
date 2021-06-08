@@ -566,17 +566,18 @@
 /* browse-job */
 .browse-job .widget-title{
 	margin-bottom: 10px;
+	
 }
 .browse-job .form-control,
 .browse-job .btn.dropdown-toggle.btn-default,
 .submit-resume .form-control,
 .submit-resume .btn.dropdown-toggle.btn-default{
-	background-color: #fff !important;
+	background-color: rgb(148, 123, 123) ;
 	border:0 !important;
-	box-shadow: 0 0 10px 0 rgba(0,24,128,0.1) !important;
+	box-shadow: 0 0 10px 0 rgba(211, 33, 9, 0.1) ;
 }
 .custom-control-label:before{
-	background-color: #e1e7ff;
+	background-color: #0f37d4;
 }
 .submit-resume .dropdown-toggle .caret,
 .browse-candidates .dropdown-toggle .caret{
@@ -584,13 +585,14 @@
 }
 .job-bx-title .bootstrap-select div.dropdown-menu ul li a {
     font-size: 12px;
-    font-family: roboto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .browse-job .btn.dropdown-toggle.btn-default,
 .submit-resume .btn.dropdown-toggle.btn-default{
 	height: 50px;
 }
 .browse-job .form-control{
+	
 	height: 50px;
 	border-radius: 5px!important;
 	margin-right: 25px;
@@ -2167,6 +2169,7 @@
 }
 .job-alert-bx{
 	padding: 10px 10px 10px 0px;
+	
 }
 	
 @media only screen and (max-width: 1024px){
@@ -2198,6 +2201,7 @@
 	}
 	.job-alert-bx{
 		padding: 10px 10px 25px 10px;
+		
 	}
 }
 @media only screen and (max-width: 600px){
@@ -2232,6 +2236,7 @@
 	}
 	.job-alert-bx{
 		padding: 0 0 25px 0;
+		
 	}
 	.list-row .list-line h6,
 	.job-bx .d-flex h5{

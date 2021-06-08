@@ -4,19 +4,34 @@ import Slider from "react-slick";
 
 
 
-import Malak from "./../../picture/bg4.jpg";
 const latestBlog = [
 	{
-		image: require('./../../picture/c12.png'),
+		image: require('./../../picture/bg2.jpg').default,
+		title : 'Building Trust with Your Remote Workers',
+		describe:'Many companies have identified remote working as a viable option to hire the best staff. Tech companies, have been doing this for years....',
+		date:'May 18, 2021',
+		views:'1k',
 	},
 	{
-		image: require('./../../picture/c12.png'),
+		image: require('./../../picture/bg3.jpg').default,
+		title : 'Using the Internet in Your Job Search',
+		describe:'Employers increasingly use the Internet as a recruiting tool. Many job search services and resources on the Internet are free to job seekers..',
+		date:'May 10, 2021',
+		views:'30',
 	},
 	{
-		image: require('./../../picture/c12.png'),
+		image: require('./../../picture/bg5.jpg').default,
+		title : '4 ways remote work could dramatically reshape your options',
+		describe:'Sometimes that’s great, as when you sit with your laptop sipping homemade cold brew on your porch, enjoying the morning breeze. Sometimes that’s more challenging..',
+		date:'May 6, 2021',
+		views:'16',
 	},
 	{
-		image: require('./../../picture/c12.png'),
+		image: require('./../../picture/bg4.jpg').default,
+		title : 'Interviewing for a job with a criminal record',
+		describe:'ob interviews can be intimidating for anyone, especially if you have a criminal record. You have to deal with the feeling of being judged, the possibility of your record...',
+		date:'May 3, 2021',
+		views:'12',
 	},
 ]
 function SampleNextArrow(props) {
@@ -73,20 +88,20 @@ class Latestblogowl extends Component{
 				{latestBlog.map((item, index) => (
 					<div className="item p-3" key={index}>
 						<div className="blog-post blog-grid blog-style-1">
-							<div className="dez-post-media dez-img-effect radius-sm"> <Link to={"/blog-details"}><img src={Malak} alt="" /></Link> </div>
+							<div className="dez-post-media dez-img-effect radius-sm"> <Link to={"/Blogdetail"}><img src={item.image} alt="" /></Link> </div>
 							<div className="dez-info">
 								 <div className="dez-post-meta">
 									<ul className="d-flex align-items-center">
-										<li className="post-date"><i className="fa fa-calendar"></i>May 18, 2021</li>
-										<li className="post-comment"><i className="fa fa-comments-o"></i><Link to={""}>5k</Link> </li>
+										<li className="post-date"><i className="fa fa-calendar"></i>{item.date}</li>
+										<li className="post-comment"><i className="fa fa-comments-o"></i><Link to={""}>{item.views}</Link> </li>
 									</ul>
 								</div>
 								<div className="dez-post-title ">
-									<h5 className="post-title font-25"><Link to="/blogs">Building Trust with Your Remote Workers</Link></h5>
+									<h5 className="post-title font-25"><Link to="/blogs">{item.title}</Link></h5>
 								</div>
 								<div className="dez-post-text">
 									<p>
-									Many companies have identified remote working as a viable option to hire the best staff. Tech companies, have been doing this for years....
+										{item.describe}
 									</p>
 								</div>
 								<div className="dez-post-readmore blog-share"> 

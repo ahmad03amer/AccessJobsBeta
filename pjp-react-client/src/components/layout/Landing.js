@@ -19,6 +19,8 @@ import Owltestimonial from '../page/Owlblog1';
 import Latestblogowl from '../page/Owlblog2';
 
 
+
+
 class Landing extends Component {
   componentDidMount() {
     if (this.props.security.validToken) {
@@ -276,20 +278,20 @@ class Landing extends Component {
 									<h6 className="fw3">8+ Categories work waiting for you</h6>
 								</div>
 								<div className="head-counter-bx">
-									<h2 className="m-b5 counter"><CountUp end={1623} duration={5}/></h2>
+									<h2 className="m-b5 counter"><CountUp end={649} duration={5}/></h2>
 									<h6 className="fw3">Jobs Posted</h6>
 								</div>
 								<div className="head-counter-bx">
-									<h2 className="m-b5 counter"><CountUp end={551} duration={5}/></h2>
+									<h2 className="m-b5 counter"><CountUp end={364} duration={5}/></h2>
 									<h6 className="fw3">Full-Time Jobs</h6>
 								</div>
 								<div className="head-counter-bx">
-									<h2 className="m-b5 counter"><CountUp end={425} duration={5}/></h2>
+									<h2 className="m-b5 counter"><CountUp end={193} duration={5}/></h2>
 									<h6 className="fw3">Part-Time Jobs</h6>
 								</div>
                         
                         <div className="head-counter-bx">
-									<h2 className="m-b5 counter"><CountUp end={300} duration={5}/></h2>
+									<h2 className="m-b5 counter"><CountUp end={92} duration={5}/></h2>
 									<h6 className="fw3">By-Contract Jobs</h6>
 								</div>
 							</div>

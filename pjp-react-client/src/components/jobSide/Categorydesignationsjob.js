@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 import Jobsearchform from './../Element/Jobsearchform';
 import Companyname from './../Element/Companyname';
-import logo from "../../picture/logo.svg";
+
 
 // import './../../css/style.css'
 // import './../../css/style.min.css'

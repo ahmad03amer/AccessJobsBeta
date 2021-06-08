@@ -130,17 +130,10 @@ class Header extends Component {
                     <Link className="nav-link text-white" to="/employerPostJob"><i class="fas fa-briefcase"></i>Employer/Job Seekers</Link>
                   </li>
                  
-                  <li className="dropdown text-white ml-2 mr-1"><i class="fas fa-clone"></i>Blogs<i class="fas fa-angle-down"></i>
-
-                    <ul>
-                    <li className="nav-item"><Link to="/blogs" className="nav-link text-white"><i class="fas fa-dollar-sign"></i>Classic</Link></li>
-											<li className="nav-item"><Link to={""} className="nav-link text-white"><i class="fas fa-dollar-sign"></i>Classic Sidebar</Link></li>
-											<li className="nav-item"><Link to={""} className="nav-link text-white"><i class="fas fa-dollar-sign"></i>Detailed Grid</Link></li>
-											<li className="nav-item"><Link to={""} className="nav-link text-white"><i class="fas fa-dollar-sign"></i>Detailed Grid Sidebar</Link></li>
-											<li className="nav-item"><Link to={""} className="nav-link text-white"><i class="fas fa-dollar-sign"></i>Left Image Sidebar</Link></li>
-											<li className="nav-item"><Link to={""} className="nav-link text-white"><i class="fas fa-dollar-sign"></i>Blog Details</Link></li>
-                    </ul>
+                  <li className="nav-item">
+                    <Link className="nav-link text-white" to={"/blogs"}><i class="fas fa-briefcase"></i>Blogs</Link>
                   </li>
+                 
                  
                   <li className="dropdown text-white ml-2"><i class="fas fa-clone"></i>Pages<i class="fas fa-angle-down"></i>
                     <ul>
@@ -155,7 +148,7 @@ class Header extends Component {
                      
                      
                       <li className="nav-item">
-                      <Link className="nav-link text-white" to="/Jobcvmanager"><i class="fas fa-database"></i>CV Manager</Link>
+                      <Link className="nav-link text-white" to={"/Freejobalerts"}><i class="fas fa-database"></i>Job Alert</Link>
                       </li>
                       <li className="dropdown text-danger ml-2">Terms Of Use<i class="fas fa-angle-double-left"></i>
                         <ul>
@@ -204,10 +197,10 @@ class Header extends Component {
 
 
                   <li className="nav-item">
-                    <Link className="nav-link1 text-info" to="/contactUs"><i class="fas fa-address-card"></i>Contact Us</Link>
+                    <Link className="nav-link1 text-white" to="/contactUs"><i class="fas fa-address-card"></i>Contact Us</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link1 text-info" to="/aboutUs"><i class="fas fa-info-circle"></i>About Us</Link>
+                    <Link className="nav-link1 text-white" to="/aboutUs"><i class="fas fa-info-circle"></i>About Us</Link>
                   </li>
                   
                   

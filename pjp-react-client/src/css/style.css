@@ -2293,6 +2293,7 @@ input[type=radio]:checked + label:before {
     left: 0;
     bottom: 0;
 }*/
+
 /*touchspin input type number*/
 
 .bootstrap-touchspin .input-group-btn-vertical {
@@ -5476,6 +5477,7 @@ ol.comment-list li .children li {
 .comment-respond {
     padding: 30px 30px;
     border: 1px solid #e9e9e9;
+    
 }
 .comment-respond .comment-reply-title {
     text-transform: uppercase;
@@ -5492,7 +5494,9 @@ ol.comment-list li .children li {
     display: none;
 }
 .comments-area .comment-form p {
-    width: 33.333%;
+    margin-top: 10px;
+    margin-right: 120px;
+    width: 100%;
     float: left;
     padding: 0 15px;
     margin-bottom: 30px;
@@ -5516,11 +5520,11 @@ ol.comment-list li.comment .comment-respond .comment-form p {
     left: 15px;
     top: 0;
     font-size: 16px;
-    color: #ccc;
+    color: rgb(8, 0, 0);
     width: 40px;
     height: 40px;
     line-height: 40px;
-    border: 1px solid #e1e6eb;
+    border: 1px solid #0e7ceb;
     text-align: center;
     border-radius: 4px 0 0 4px;
     -webkit-border-radius: 4px 0 0 4px;
@@ -5544,7 +5548,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
     height: 40px;
     line-height: 6px 12px;
     padding: 10px 10px 10px 50px;
-    border: 1px solid #e1e6eb;
+    border: 1px solid #ebe5e1;
     border-radius: 4px;
     -webkit-border-radius: 4px;
 	text-transform: capitalize;
@@ -5558,12 +5562,14 @@ ol.comment-list li.comment .comment-respond .comment-form p {
     height: 120px;
 }
 .comments-area .comment-form p.form-submit {
+    
     clear: both;
     float: none;
     width: 100%;
     margin: 0;
 }
 .comments-area .comment-form p input[type="submit"] {
+    
     background-color: #EFBB20;
     border: none;
     border-radius: 3px;
@@ -5578,8 +5584,8 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 .comments-area .comment-form p input[type="submit"]:hover,
 .comments-area .comment-form p input[type="submit"]:focus,
 .comments-area .comment-form p input[type="submit"]:active {
-    background-color: #1d46f5;
-    border-color: #1d46f5;
+    background-color: #0d2dbd;
+    border-color: #04176d;
     color: #fff;
 }
 @media only screen and (max-width: 991px) {
@@ -5626,7 +5632,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 	font-weight: 600;
 	line-height: 12px;
 }
-/* .widget-title.style-1:after {
+.widget-title.style-1:after {
     border-radius: 0;
     bottom: -2px;
     content: "";
@@ -5637,7 +5643,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
     position: absolute;
     vertical-align: bottom;
     width: 50px;
-} */
+} 
 .recent-posts-entry ul,
 .category-entry ul {
     margin: 0;
@@ -6112,7 +6118,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 	overflow: hidden;
 }
 .widget-newslatter p{
-	font-style: italic;
+	font-style: normal;
 	font-size:15px;
 }
 .widget-newslatter .form-control {
@@ -6135,8 +6141,9 @@ ol.comment-list li.comment .comment-respond .comment-form p {
     font-weight: 700;
     opacity: 0.05;
     position: absolute;
-    top: -40px;
+    
 	z-index:-1;
+   
 }
 .news-box:before {
 	font-family:themify;

@@ -25,7 +25,7 @@ class Privacy extends Component {
                                 <p>You acknowledge and agree that all content and information on the Site is protected by proprietary rights and laws.</p>
                                
                                 <h3 className="privacyh2">Product Ownership.</h3>
-                                <p>Accessjobs.com is a product of <a href="http://Access.co/" target="_blank">AccessJobs, Team BZU</a>.</p>
+                                <p>Accessjobs.com is a product of <a href="http:www.Access.com" rel="noreferrer" target="_blank">AccessJobs, Team BZU</a>.</p>
                                 <h3 className="privacyh2">Modifications to this Agreement.</h3>
                                 <p>Access Jobs reserves the right to change or modify any of the terms and conditions contained in this Agreement at any time. You acknowledge and agree that it is your responsibility to review the Site and these Terms of Service from time to time. Your continued use of the Site after such modifications to this Agreement will constitute acknowledgment of the modified Terms of Service and agreement to abide and be bound by the modified Terms of Service.</p>
                                

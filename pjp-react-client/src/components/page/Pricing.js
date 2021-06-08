@@ -49,7 +49,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                            <del>Searching for highly experienced job seekers</del>
                          </li>
                        </ul>
-                       <a href="#" class="btn btn-primary btn-block p-2 shadow rounded-pill">Subscribe</a>
+                       <a href="/" class="btn btn-primary btn-block p-2 shadow rounded-pill">Subscribe</a>
                      </div>
                    </div>
                   
@@ -75,7 +75,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                            <del>Searching for highly experienced job seekers</del>
                          </li>
                        </ul>
-                       <a href="#" class="btn btn-primary btn-block p-2 shadow rounded-pill">Subscribe</a>
+                       <a href="/" class="btn btn-primary btn-block p-2 shadow rounded-pill">Subscribe</a>
                      </div>
                    </div>
                   
@@ -103,7 +103,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                            <i class="fa fa-check mr-2 text-primary"></i> Searching for highly experienced job seekers</li>
                           
                        </ul>
-                       <a href="#" class="btn btn-primary btn-block p-2 shadow rounded-pill">Subscribe</a>
+                       <a href="/" class="btn btn-primary btn-block p-2 shadow rounded-pill">Subscribe</a>
                      </div>
                    </div>
                   

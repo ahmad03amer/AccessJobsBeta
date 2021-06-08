@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
 import {Link} from "react-router-dom"; 
 import '../Page_Css/TraningCourse.css';
-import blog from '../../picture/about.jpg';
 // for the first section to have a note in the Corses 
 import note from '../../picture/note2.jpg';
 
 // for the 1st section in the cards
 import Ml from '../../picture/ML.jpg';
-import Ml2 from '../../picture/ml2.jpg';
 import c from '../../picture/c12.png';
 
 
@@ -137,7 +135,7 @@ class TrnaingCourses extends Component {
                   <p className="price">Free</p>
                 </div>
 
-                <h3><a onClick={()=> window.open("https://www.coursera.org/learn/machine-learning", "_blank")} >Machine Learning</a></h3>
+                <h3><Link onClick={()=> window.open("https://www.coursera.org/learn/machine-learning", "_blank")} >Machine Learning</Link></h3>
                 <p>This course provides a broad introduction to 
                   machine learning, datamining, and statistical pattern 
                   recognition Supervised learning (parametric/non-parametric algorithms, support vector machines, kernels, neural networks). (ii) Unsupervised learning. </p>
@@ -166,7 +164,7 @@ class TrnaingCourses extends Component {
                   <p className="price">Free</p>
                 </div>
 
-                <h3><a onClick={()=> window.open("https://www.coursera.org/learn/machine-learning", "_blank")}>C++ For C Programmers</a></h3>
+                <h3><Link onClick={()=> window.open("https://www.coursera.org/learn/machine-learning", "_blank")}>C++ For C Programmers</Link></h3>
                 <p>This course is for experienced C programmers who want to program in C++. The examples and exercises require a basic understanding of algorithms and object-oriented software.
                 Language English How To Pass Pass all graded assignments to complete the course. 
 
@@ -195,7 +193,7 @@ class TrnaingCourses extends Component {
                   <p className="price">Free</p>
                 </div>
 
-                <h3><a onClick={()=> window.open("https://www.coursera.org/learn/finance-fundamentals", "_blank")}>Fundamentals of Finance</a></h3>
+                <h3><Link onClick={()=> window.open("https://www.coursera.org/learn/finance-fundamentals", "_blank")}>Fundamentals of Finance</Link></h3>
                 <p>
                 In this course, you’ll learn the basic fundamentals of 
                 corporate finance. Based on the pre-term qualifying courses 
@@ -237,7 +235,7 @@ class TrnaingCourses extends Component {
                   <p className="price">$150</p>
                 </div>
 
-                <h3><a onClick={()=> window.open("https://www.coursera.org/specializations/jhu-data-science", "_blank")}>Data Science Specialization</a></h3>
+                <h3><Link onClick={()=> window.open("https://www.coursera.org/specializations/jhu-data-science", "_blank")}>Data Science Specialization</Link></h3>
                 <p>Launch Your Career in Data Science. 
                   A ten-course introduction to data science, 
                   developed and taught by leading professors AI and machine 
@@ -268,7 +266,7 @@ class TrnaingCourses extends Component {
                   <p className="price">$200</p>
                 </div>
 
-                <h3><a onClick={()=> window.open("https://www.coursera.org/specializations/deep-learning", "_blank")}>Deep Learning Specialization</a></h3>
+                <h3><Link onClick={()=> window.open("https://www.coursera.org/specializations/deep-learning", "_blank")}>Deep Learning Specialization</Link></h3>
                 <p>
                 In this Specialization, you will build and train neural network 
                 architectures such as Convolutional Neural Networks, Recurrent Neural
@@ -301,7 +299,7 @@ class TrnaingCourses extends Component {
                   <p className="price">$180</p>
                 </div>
 
-                <h3><a onClick={()=> window.open("https://www.coursera.org/specializations/wharton-business-foundations", "_blank")}>Business Foundations Specialization</a></h3>
+                <h3><Link onClick={()=> window.open("https://www.coursera.org/specializations/wharton-business-foundations", "_blank")}>Business Foundations Specialization</Link></h3>
                 <p> 
                 In this Specialization, you’ll develop basic literacy in the language of 
                 business, which you can use to transition to a new career, start or improve
@@ -342,7 +340,7 @@ class TrnaingCourses extends Component {
                   <p className="price">$4,500</p>
                 </div>
 
-                <h3><a onClick={()=> window.open("https://www.coursera.org/mastertrack/big-data-asu", "_blank")}>Big Data MasterTrack® Certificate</a></h3>
+                <h3><Link onClick={()=> window.open("https://www.coursera.org/mastertrack/big-data-asu", "_blank")}>Big Data MasterTrack® Certificate</Link></h3>
                 <p>Data mining techniques provide the first level of abstraction 
                   to raw data by extracting patterns, making big data analytics tools
                    increasingly critical for providing meaningful information to 
@@ -374,7 +372,7 @@ class TrnaingCourses extends Component {
                   <p className="price">$4500</p>
                 </div>
 
-                <h3><a onClick={()=> window.open("https://www.coursera.org/mastertrack/ai-machine-learning-asu", "_blank")}>AI and Machine Learning MasterTrack® Certificate</a></h3>
+                <h3><Link onClick={()=> window.open("https://www.coursera.org/mastertrack/ai-machine-learning-asu", "_blank")}>AI and Machine Learning MasterTrack® Certificate</Link></h3>
                 <p>In this program, you will complete a real module 
                   from the online Master of Computer Science program that will help you 
                   understand artificial intelligence through a combination of both theory 
@@ -410,7 +408,7 @@ class TrnaingCourses extends Component {
                   <p className="price">$2000</p>
                 </div>
 
-                <h3><a onClick={()=> window.open("https://www.coursera.org/mastertrack/social-work-umich", "_blank")}>MasterTrack® Social Work: Practice, Policy and Research</a></h3>
+                <h3><Link onClick={()=> window.open("https://www.coursera.org/mastertrack/social-work-umich", "_blank")}>MasterTrack® Social Work: Practice, Policy and Research</Link></h3>
                 <p>
                 In this course, you will learn how social workers in the United States 
                 create change and support the resilience of individuals, families, and 
@@ -455,7 +453,7 @@ class TrnaingCourses extends Component {
                   <p className="price">$20,564</p>
                 </div>
 
-                <h3><a onClick={()=> window.open("https://www.coursera.org/degrees/imsa", "_blank")}>Online Master's of Accounting (iMSA)</a></h3>
+                <h3><Link onClick={()=> window.open("https://www.coursera.org/degrees/imsa", "_blank")}>Online Master's of Accounting (iMSA)</Link></h3>
                 <p>
                 The University of Illinois’ Gies College of Business, consistently ranked 
                 among the nation's top three accounting programs, is a revered destination 
@@ -491,7 +489,7 @@ class TrnaingCourses extends Component {
                   <p className="price">$21,440</p>
                 </div>
 
-                <h3><a onClick={()=> window.open("https://www.coursera.org/degrees/master-of-computer-science-illinois", "_blank")}>Master of Computer Science (Featuring Data Science Track)</a></h3>
+                <h3><Link onClick={()=> window.open("https://www.coursera.org/degrees/master-of-computer-science-illinois", "_blank")}>Master of Computer Science (Featuring Data Science Track)</Link></h3>
                 <p>
                 The University of Illinois offers a separate, more flexible track for students 
                 who are eager to explore several advanced topics in computer science as part of
@@ -526,7 +524,7 @@ class TrnaingCourses extends Component {
                   <p className="price">$21,744</p>
                 </div>
 
-                <h3><a onClick={()=> window.open("https://www.coursera.org/degrees/business", "_blank")}>Master of Business Administration(MBA)</a></h3>
+                <h3><Link onClick={()=> window.open("https://www.coursera.org/degrees/business", "_blank")}>Master of Business Administration(MBA)</Link></h3>
                 <p>
                
                 Students in the iMBA program earn the same high-quality MBA degree 

@@ -27,8 +27,9 @@ import Nablus from './../../images/city/nablus.jpg'
  import gaza from './../../images/city/gaza.jpg'
  import betlahem from './../../images/city/betlahem.jpg'
 import Jobsearchform from './../Element/Jobsearchform';
-import logo from "../../picture/logo.svg";
 import bnr from  './../../images/banner/bnr1.jpg';
+
+
 
 const cityBox = [
 	{

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "../Page_Css/Blog.css";
+import {Link} from "react-router-dom";
 
-import blog from "../../picture/about.jpg";
 import blog1 from "../../picture/search.jpg";
 import blog2 from "../../picture/job.jpg";
 import blog3 from "../../picture/cio_career.png";
-import searchJ from "../../picture/search.png";
+import searchJ from "../../images/banner/bnr1.jpg";
 import interview from "../../picture/interview.jpg";
 import flex1 from "../../picture/flex.png";
 import survy from "../../picture/women-work-home-353x177.png";
@@ -26,9 +26,9 @@ class Blogs extends Component {
           <div className="hero-container " data-aos="fade-up">
             <h1>Welcome To Access Jobs Blog</h1>
             <h2>Blogs of Access jobs to help you to have more knowledge </h2>
-            <a href="/" className="btn-get-started scrollto">
+            <Link to="/register" className="btn-get-started scrollto">
               Go To add your blog
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -48,7 +48,7 @@ class Blogs extends Component {
                         data-purecounter-end="65"
                         className="purecounter"
                       >
-                        5006
+                        6
                       </span>
                       <p>Happy Clients</p>
                     </div>
@@ -62,7 +62,7 @@ class Blogs extends Component {
                         data-purecounter-end="85"
                         className="purecounter"
                       >
-                        12157
+                        12
                       </span>
                       <p>Jobs</p>
                     </div>
@@ -76,7 +76,7 @@ class Blogs extends Component {
                         data-purecounter-end="27"
                         className="purecounter"
                       >
-                        142
+                        1
                       </span>
                       <p>Jobs in Day</p>
                     </div>
@@ -102,11 +102,14 @@ class Blogs extends Component {
             <div className="row">
               <div className="col-lg-6 video-box align-self-baseline position-relative mt-4">
                 <img src={searchJ} className="img-fluid" alt="img" />
-                <a
+                
+                <Link 
+                className="glightbox play-btn mb-5 mt-5"
                   target="_blank"
-                  href="https://www.youtube.com/watch?v=afKwiLCUtEQ&t=74s"
-                  className="glightbox play-btn mb-5 mt-5"
-                ></a>
+                  rel='noreferrer'
+                  to="https://www.youtube.com/watch?v=afKwiLCUtEQ&t=74s"
+                  
+                ></Link>
               </div>
 
               <div className="col-lg-6 pt-3 pt-lg-0 content">
@@ -137,6 +140,7 @@ class Blogs extends Component {
                 <div className="read-more">
                   <a
                     target="_blank"
+                    rel='noreferrer'
                     href="https://edu.gcfglobal.org/en/jobsearchandnetworking/find-a-job-online/1/"
                    
                   >
@@ -179,12 +183,11 @@ class Blogs extends Component {
                   </div>
 
                   <h2 className="entry-title">
-                    <a
-                      target="_blank"
-                      href="https://theundercoverrecruiter.com/build-trust-with-remote-workers/"
+                  <Link
+                     to="./Blogdetail"
                     >
                       Building Trust with Your Remote Workers
-                    </a>
+                    </Link>
                   </h2>
 
                   <div className="entry-meta">
@@ -219,6 +222,7 @@ class Blogs extends Component {
                     <div className="read-more">
                       <a
                         target="_blank"
+                        rel='noreferrer'
                         href="https://theundercoverrecruiter.com/build-trust-with-remote-workers/"
                       >
                         Read More
@@ -234,7 +238,15 @@ class Blogs extends Component {
                   </div>
 
                   <h2 className="entry-title">
-                    <a href="/">Using the Internet in Your Job Search</a>
+                    <a 
+
+                    target="_blank"
+                      rel='noreferrer'
+                      href="https://career.fsu.edu/sites/g/files/imported/storage/original/application/27ba368e3cba4cc02d2931a2be2f4f3d.pdf"
+                    
+                    
+                    
+                    >Using the Internet in Your Job Search</a>
                   </h2>
 
                   <div className="entry-meta">
@@ -271,8 +283,9 @@ class Blogs extends Component {
                     <div className="read-more">
                       <a
                         target="_blank"
+                        rel='noreferrer'
                         href="https://career.fsu.edu/sites/g/files/imported/storage/original/application/27ba368e3cba4cc02d2931a2be2f4f3d.pdf"
-                        target="_blank"
+                        
                       >
                         Read More
                       </a>
@@ -289,6 +302,7 @@ class Blogs extends Component {
                   <h2 className="entry-title">
                     <a
                       target="_blank"
+                      rel='noreferrer'
                       href="https://enterprisersproject.com/article/2020/6/it-careers-remote-work-expands-options"
                     >
                       4 ways remote work could dramatically reshape your options
@@ -329,6 +343,7 @@ class Blogs extends Component {
                     <div className="read-more">
                       <a
                         target="_blank"
+                        rel='noreferrer'
                         href="https://enterprisersproject.com/article/2020/6/it-careers-remote-work-expands-options"
                       >
                         Read More
@@ -347,6 +362,7 @@ class Blogs extends Component {
                   <h2 className="entry-title">
                     <a
                       target="_blank"
+                      rel='noreferrer'
                       href="https://edu.gcfglobal.org/en/jobsearchandnetworking/interviewing-for-a-job-with-a-criminal-record/1/"
                     >
                       Interviewing for a job with a criminal record
@@ -385,6 +401,7 @@ class Blogs extends Component {
                     <div className="read-more">
                       <a
                         target="_blank"
+                        rel='noreferrer'
                         href="https://edu.gcfglobal.org/en/jobsearchandnetworking/interviewing-for-a-job-with-a-criminal-record/1/"
                       >
                         Read More
@@ -527,55 +544,7 @@ class Blogs extends Component {
                       </h4>
                       <time dateTime="2021-05-01">May 1, 2021</time>
                     </div>
-                    <div className="post-item clearfix">
-                      <img src={blog} alt="" />
-                      <h4>
-                        <a href="/">Et dolores corrupti quae illo quod dolor</a>
-                      </h4>
-                      <time dateTime="2021-05-01">May 1, 2021</time>
-                    </div>
-                    <div className="post-item clearfix">
-                      <img src={blog} alt="" />
-                      <h4>
-                        <a href="/">Et dolores corrupti quae illo quod dolor</a>
-                      </h4>
-                      <time dateTime="2021-05-01">May 1, 2021</time>
-                    </div>
-                    <div className="post-item clearfix">
-                      <img src={blog} alt="" />
-                      <h4>
-                        <a href="/">Et dolores corrupti quae illo quod dolor</a>
-                      </h4>
-                      <time dateTime="2021-05-01">May 1, 2021</time>
-                    </div>
-                    <div className="post-item clearfix">
-                      <img src={blog} alt="" />
-                      <h4>
-                        <a href="/">Et dolores corrupti quae illo quod dolor</a>
-                      </h4>
-                      <time dateTime="2021-05-01">May 1, 2021</time>
-                    </div>
-                    <div className="post-item clearfix">
-                      <img src={blog} alt="" />
-                      <h4>
-                        <a href="/">Et dolores corrupti quae illo quod dolor</a>
-                      </h4>
-                      <time dateTime="2021-05-01">May 1, 2021</time>
-                    </div>
-                    <div className="post-item clearfix">
-                      <img src={blog} alt="" />
-                      <h4>
-                        <a href="/">Et dolores corrupti quae illo quod dolor</a>
-                      </h4>
-                      <time dateTime="2021-05-01">May 1, 2021</time>
-                    </div>
-                    <div className="post-item clearfix">
-                      <img src={blog} alt="" />
-                      <h4>
-                        <a href="/">Et dolores corrupti quae illo quod dolor</a>
-                      </h4>
-                      <time dateTime="2021-05-01">May 1, 2021</time>
-                    </div>
+                    
                   </div>
 
                   {/* <!-- End sidebar recent posts--> */}

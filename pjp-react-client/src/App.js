@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import ScrollToTop from "./components/TopView/ScrollToTop";
+
 import "./App.css";
 
 
@@ -74,8 +76,10 @@ import Categoryjobs from "./components/jobSide/Categoryjobs";
 import Categorylocationjobs from "./components/jobSide/Categorylocationjobs";
 import Categoryskilljobs from "./components/jobSide/Categoryskilljobs";
 
+import CustomChatbot from "./components/chatbot/CustomChatbot";
+import Blogdetail from "./components/page/Blogdetail";
 
-
+import Freejobalerts from "./components/page/Freejobalerts";
 
 
 const jwtToken = localStorage.jwtToken;
@@ -102,8 +106,9 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <div className="App">
-           
+          <ScrollToTop>
             <Header />
+            <CustomChatbot/>
             
             {
               //Public Routes
@@ -125,6 +130,8 @@ class App extends Component {
             <Route exact path="/Disclaimer" component={Disclaimer}/>
             <Route exact path="/TrnaingCourses" component={TrnaingCourses}/>
             <Route exact path="/TermsOfUse" component={TermsOfUse}/>
+            <Route exact path="/Blogdetail" component={Blogdetail}/>
+
 
             {/* job section */}
             <Route path='/category-all-jobs' exact component={Categoryalljob} />
@@ -146,6 +153,10 @@ class App extends Component {
             <Route exact path="/Jobsalert" component={Jobsalert}/>
             <Route exact path="/Jobsavedjobs" component={Jobsavedjobs}/>
             <Route exact path="/Changepasswordpage" component={Changepasswordpage}/>
+
+            
+            <Route exact path="/Freejobalerts" component={Freejobalerts}/>
+
          
             
            {/* <Route                               component={NotFoundPage}/> */} 
@@ -165,6 +176,7 @@ class App extends Component {
 
             </Switch>
             <Footer/>
+            </ScrollToTop>
           </div>
         </Router>
       </Provider>

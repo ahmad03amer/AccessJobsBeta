@@ -8,8 +8,8 @@ import Listingsidebar from './Listingsidebar';
 
 import Malak from "./../../picture/mlk.jpg";
 
-var bnr = require('./../../picture/mlk.jpg');
-var bnr2 = require('./../../picture/ahmad1.jpg');
+var bnr = require('./../../images/banner/bnr3.jpg').default;
+var bnr2 = require('./../../picture/bg3.jpg').default;
 
 
 class Jobmyresume extends Component{
@@ -47,7 +47,7 @@ class Jobmyresume extends Component{
 										</div>
 										<div className="text-white browse-job text-left">
 											<h4 className="m-b0">Malak Ibrahim
-												<Link to={""} className="m-l15 font-16 text-white" data-toggle="modal" data-target="#profilename" ><i className="fa fa-pencil"></i></Link>
+												<Link to={"/"} className="m-l15 font-16 text-white" data-toggle="modal" data-target="#profilename" ><i className="fa fa-pencil"></i></Link>
 											</h4>
 											<p className="m-b15">Full Stack Developer </p>
 											<ul className="clearfix">
@@ -66,7 +66,7 @@ class Jobmyresume extends Component{
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-5">
-									<Link to={""}>
+									<Link to={"/"}>
 										<div className="pending-info text-white p-a25">
 											<h5>Pending Action</h5>
 											<ul className="list-check secondry">
@@ -488,12 +488,12 @@ class Jobmyresume extends Component{
 											<div className="row">
 												<div className="col-lg-12 col-md-12 col-sm-12">
 													<div className="clearfix m-b20">
-														<label className="m-b0">London - 12th</label>
-														<span className="clearfix font-13">2017</span>
+														<label className="m-b0">Palestine - 12th</label>
+														<span className="clearfix font-13">2020</span>
 													</div>
 													<div className="clearfix m-b20">
-														<label className="m-b0">London - 10th</label>
-														<span className="clearfix font-13">2015</span>
+														<label className="m-b0">Palestine - Traning 1th</label>
+														<span className="clearfix font-13">2021</span>
 													</div>
 												</div>
 											</div>
@@ -520,37 +520,37 @@ class Jobmyresume extends Component{
 												<tbody>
 													<tr>
 														<td>Bootstrap</td>
-														<td>3</td>
-														<td>2018</td>
-														<td>1 Year 5 Months</td>
+														<td>4</td>
+														<td>2021</td>
+														<td>5 Months</td>
 														<td><Link to={""} className="m-l15 font-14" data-toggle="modal" data-target="#itskills" ><i className="fa fa-pencil"></i></Link></td>
 													</tr>
 													<tr>
-														<td>Bootstrap</td>
-														<td>4</td>
-														<td>2013</td>
-														<td>5 Year 5 Months</td>
+														<td>React</td>
+														<td>5</td>
+														<td>2021</td>
+														<td>5 Months</td>
 														<td><Link to={""} className="m-l15 font-14" data-toggle="modal" data-target="#itskills"><i className="fa fa-pencil"></i></Link></td>
 													</tr>
 													<tr>
 														<td>html</td>
 														<td>5</td>
-														<td>2016</td>
-														<td>2 Year 7 Months</td>
+														<td>2020</td>
+														<td>1 Year 2 Months</td>
 														<td><Link to={""} className="m-l15 font-14" data-toggle="modal" data-target="#itskills" ><i className="fa fa-pencil"></i></Link></td>
 													</tr>
 													<tr>
 														<td>css</td>
-														<td>3</td>
-														<td>2018</td>
-														<td>0 Year 5 Months</td>
+														<td>5</td>
+														<td>2020</td>
+														<td>5 Months</td>
 														<td><Link to={""} className="m-l15 font-14" data-toggle="modal" data-target="#itskills"><i className="fa fa-pencil"></i></Link></td>
 													</tr>
 													<tr>
-														<td>photoshop</td>
-														<td>64bit</td>
-														<td>2017</td>
-														<td>1 Year 0 Months</td>
+														<td>Java</td>
+														<td>...</td>
+														<td>2021</td>
+														<td>4 Year 1 Months</td>
 														<td><Link to={""} className="m-l15 font-14" data-toggle="modal" data-target="#itskills"><i className="fa fa-pencil"></i></Link></td>
 													</tr>
 												</tbody>
@@ -584,33 +584,11 @@ class Jobmyresume extends Component{
 																		<div className="form-group">
 																			<label>Last Used</label>
 																			<Form.Control as="select">
-																				<option>2018</option>
-																				<option>2017</option>
-																				<option>2016</option>
-																				<option>2015</option>
-																				<option>2014</option>
-																				<option>2013</option>
-																				<option>2012</option>
-																				<option>2011</option>
-																				<option>2010</option>
-																				<option>2009</option>
-																				<option>2008</option>
-																				<option>2007</option>
-																				<option>2006</option>
-																				<option>2005</option>
-																				<option>2004</option>
-																				<option>2003</option>
-																				<option>2002</option>
-																				<option>2001</option>
-																			</Form.Control>
-																		</div>
-																	</div>
-																	<div className="col-lg-12 col-md-6">
-																		<div className="form-group">
-																			<label>Experience</label>
-																			<div className="row">
-																				<div className="col-lg-6 col-md-6 col-sm-6 col-6">
-																					<Form.Control as="select">
+																						<option>2023</option>
+																						<option>2022</option>
+																						<option>2021</option>
+																						<option>2020</option>
+																						<option>2019</option>
 																						<option>2018</option>
 																						<option>2017</option>
 																						<option>2016</option>
@@ -623,12 +601,32 @@ class Jobmyresume extends Component{
 																						<option>2009</option>
 																						<option>2008</option>
 																						<option>2007</option>
-																						<option>2006</option>
-																						<option>2005</option>
-																						<option>2004</option>
-																						<option>2003</option>
-																						<option>2002</option>
-																						<option>2001</option>
+																			</Form.Control>
+																		</div>
+																	</div>
+																	<div className="col-lg-12 col-md-6">
+																		<div className="form-group">
+																			<label>Experience</label>
+																			<div className="row">
+																				<div className="col-lg-6 col-md-6 col-sm-6 col-6">
+																					<Form.Control as="select">
+																						<option>2023</option>
+																						<option>2022</option>
+																						<option>2021</option>
+																						<option>2020</option>
+																						<option>2019</option>
+																						<option>2018</option>
+																						<option>2017</option>
+																						<option>2016</option>
+																						<option>2015</option>
+																						<option>2014</option>
+																						<option>2013</option>
+																						<option>2012</option>
+																						<option>2011</option>
+																						<option>2010</option>
+																						<option>2009</option>
+																						<option>2008</option>
+																						<option>2007</option>
 																					</Form.Control>
 																				</div>
 																				<div className="col-lg-6 col-md-6 col-sm-6 col-6">
@@ -669,7 +667,7 @@ class Jobmyresume extends Component{
 											</div>
 											<h6 className="font-14 m-b0">Job BoardEdit</h6>
 											<p className="m-b0">w3itexpert (Offsite)</p>
-											<p className="m-b0">Dec 2018 to Present (Full Time)</p>
+											<p className="m-b0">May 2021 to Present (Full Time)</p>
 											<p className="m-b0">Job Board Template</p>
 											
 											<div className="modal fade modal-bx-info editor" id="projects" tabIndex="-1" role="dialog" aria-labelledby="ProjectsModalLongTitle" aria-hidden="true">
@@ -730,6 +728,12 @@ class Jobmyresume extends Component{
 																			<div className="row">
 																				<div className="col-lg-6 col-md-6 col-sm-6 col-6">
 																					<Form.Control as="select">
+																					<option>2024</option>
+																						<option>2023</option>
+																						<option>2022</option>
+																						<option>2021</option>
+																						<option>2020</option>
+																						<option>2019</option>
 																						<option>2018</option>
 																						<option>2017</option>
 																						<option>2016</option>
@@ -742,12 +746,6 @@ class Jobmyresume extends Component{
 																						<option>2009</option>
 																						<option>2008</option>
 																						<option>2007</option>
-																						<option>2006</option>
-																						<option>2005</option>
-																						<option>2004</option>
-																						<option>2003</option>
-																						<option>2002</option>
-																						<option>2001</option>
 																					</Form.Control>
 																				</div>
 																				<div className="col-lg-6 col-md-6 col-sm-6 col-6">
@@ -775,6 +773,12 @@ class Jobmyresume extends Component{
 																			<div className="row">
 																				<div className="col-lg-6 col-md-6 col-sm-6 col-6">
 																					<Form.Control as="select">
+																						<option>2024</option>
+																						<option>2023</option>
+																						<option>2022</option>
+																						<option>2021</option>
+																						<option>2020</option>
+																						<option>2019</option>
 																						<option>2018</option>
 																						<option>2017</option>
 																						<option>2016</option>
@@ -787,12 +791,6 @@ class Jobmyresume extends Component{
 																						<option>2009</option>
 																						<option>2008</option>
 																						<option>2007</option>
-																						<option>2006</option>
-																						<option>2005</option>
-																						<option>2004</option>
-																						<option>2003</option>
-																						<option>2002</option>
-																						<option>2001</option>
 																					</Form.Control>
 																				</div>
 																				<div className="col-lg-6 col-md-6 col-sm-6 col-6">
@@ -1913,7 +1911,7 @@ class Jobmyresume extends Component{
 													</div>
 													<div className="clearfix m-b20">
 														<label className="m-b0">Hometown</label>
-														<span className="clearfix font-13">Delhi</span>
+														<span className="clearfix font-13">Salfit</span>
 													</div>
 													<div className="clearfix m-b20">
 														<label className="m-b0">Work permit of other country</label>

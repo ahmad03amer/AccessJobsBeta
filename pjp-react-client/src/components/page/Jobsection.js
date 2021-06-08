@@ -96,13 +96,18 @@ class Jobsection extends Component{
 										<Link to={"/register"} className="site-button">Create an Account</Link>
 									</div>
 								</div>
-								<div className="quote-bx mt-5">
+								<div className="quote-bx mt-5 mb-5">
 									<div className="quote-info">
 										<h4>Create Job Alert</h4>
 										<p>Your Job Alert in minutes for job information published in Access Jobs</p>
-										<Link to={"/register"} className="site-button">Create Job Alert</Link>
+										<Link to={"/Freejobalerts"} className="site-button">Create Job Alert</Link>
 									</div>
 								</div>
+
+								
+									
+									<iframe title="This is a list from Tanqeeb jobs" src="https://palestine.tanqeeb.com/s/jobs/engineer?widget=1&width=150&height=400&color1=052B5B&color2=FFFFFF" width="255" height="400" frameBorder="0" border="5" scrolling="no" margin="500px"></iframe>
+									
 							
 						</div>
 					</div>

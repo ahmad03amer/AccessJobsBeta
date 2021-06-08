@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import logo from "../../picture/logo.svg";
+
 
 import Jobsearchform from './../Element/Jobsearchform';
-// import './../../css/style.css'
-// import './../../css/style.min.css'
-// import './../../css/templete.css'
-// import './../../css/templete.min.css'
+
+
 
 import bnr from './../../images/banner/bnr1.jpg';
 

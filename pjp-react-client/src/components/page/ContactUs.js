@@ -84,7 +84,7 @@ const ContactUs = () => {
           <MDBCard>
             <MDBCardBody>
               <div className="form-header ">
-                <h2 className="mt-2" className="blue-text font-weight-bold ml-2" >
+                <h2 className="blue-text font-weight-bold ml-2 mt-2" >
                 <MDBIcon far icon="comments" size="2x" className="blue-text mr-1"  /> Write to us:
                 </h2>
               </div>

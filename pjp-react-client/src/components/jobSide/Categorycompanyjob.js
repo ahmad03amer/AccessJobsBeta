@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 // import './../../css/style.min.css'
 // import './../../css/templete.css'
 // import './../../css/templete.min.css'
-import logo from "../../picture/logo.svg";
+
 
 import logo17 from "./../../images/logo/logo17.png"
 import logo18 from "./../../images/logo/logo18.png"

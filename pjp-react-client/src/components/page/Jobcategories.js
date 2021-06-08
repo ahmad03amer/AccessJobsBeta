@@ -9,7 +9,7 @@ class Jobcategories extends Component{
 					<div className="icon-bx-wraper">
 						<div className="icon-content">
 							<div className="icon-md text-primary m-b20"><i className="ti-location-pin"></i></div>
-							<Link to="/FindJobs" className="dez-tilte">Engineering </Link>
+							<Link to="/FindJobs" className="dez-tilte">Engineering Jobs </Link>
 							<p className="m-a0">126 Open Positions</p>
 							<div className="rotate-icon"><i className="ti-location-pin"></i></div> 
 						</div>
@@ -19,7 +19,7 @@ class Jobcategories extends Component{
 					<div className="icon-bx-wraper">
 						<div className="icon-content">
 							<div className="icon-md text-primary m-b20"><i className="ti-wand"></i></div>
-							<Link to="/FindJobs" className="dez-tilte">Education Training</Link>
+							<Link to="/FindJobs" className="dez-tilte">Education Training Jobs</Link>
 							<p className="m-a0">15 Open Positions</p>
 							<div className="rotate-icon"><i className="ti-wand"></i></div> 
 						</div>
@@ -29,7 +29,7 @@ class Jobcategories extends Component{
 					<div className="icon-bx-wraper">
 						<div className="icon-content">
 							<div className="icon-md text-primary m-b20"><i className="ti-wallet"></i></div>
-							<Link to="/FindJobs" className="dez-tilte">Accounting / Finance</Link>
+							<Link to="/FindJobs" className="dez-tilte">Accounting&Finance Jobs</Link>
 							<p className="m-a0">76 Open Positions</p>
 							<div className="rotate-icon"><i className="ti-wallet"></i></div> 
 						</div>
@@ -39,8 +39,8 @@ class Jobcategories extends Component{
 					<div className="icon-bx-wraper">
 						<div className="icon-content">
 							<div className="icon-md text-primary m-b20"><i className="ti-cloud-up"></i></div>
-							<Link to="/FindJobs" className="dez-tilte">Human Resource</Link>
-							<p className="m-a0">15 Open Positions</p>
+							<Link to="/FindJobs" className="dez-tilte">Computer Engineer Jobs</Link>
+							<p className="m-a0">150 Open Positions</p>
 							<div className="rotate-icon"><i className="ti-cloud-up"></i></div> 
 						</div>
 					</div>
@@ -49,7 +49,7 @@ class Jobcategories extends Component{
 					<div className="icon-bx-wraper">
 						<div className="icon-content">
 							<div className="icon-md text-primary m-b20"><i className="ti-bar-chart"></i></div>
-							<Link to="/FindJobs" className="dez-tilte">Information Technology</Link>
+							<Link to="/FindJobs" className="dez-tilte">Programming Jobs</Link>
 							<p className="m-a0">67 Open Positions</p>
 							<div className="rotate-icon"><i className="ti-bar-chart"></i></div> 
 						</div>
@@ -59,7 +59,7 @@ class Jobcategories extends Component{
 					<div className="icon-bx-wraper">
 						<div className="icon-content">
 							<div className="icon-md text-primary m-b20"><i className="ti-tablet"></i></div>
-							<Link to="/FindJobs" className="dez-tilte">Legal & Literature</Link>
+							<Link to="/FindJobs" className="dez-tilte">Legal & Literature Jobs</Link>
 							<p className="m-a0">12 Open Positions</p>
 							<div className="rotate-icon"><i className="ti-tablet"></i></div> 
 						</div>
@@ -69,7 +69,7 @@ class Jobcategories extends Component{
 					<div className="icon-bx-wraper">
 						<div className="icon-content">
 							<div className="icon-md text-primary m-b20"><i className="ti-camera"></i></div>
-							<Link to="/FindJobs" className="dez-tilte">Construction / Facilities</Link>
+							<Link to="/FindJobs" className="dez-tilte">Art & Design Jobs</Link>
 							<p className="m-a0">198 Open Positions</p>
 							<div className="rotate-icon"><i className="ti-camera"></i></div> 
 						</div>
@@ -79,8 +79,8 @@ class Jobcategories extends Component{
 					<div className="icon-bx-wraper">
 						<div className="icon-content">
 							<div className="icon-md text-primary m-b20"><i className="ti-panel"></i></div>
-							<Link to="/FindJobs" className="dez-tilte">Health</Link>
-							<p className="m-a0">198 Open Positions</p>
+							<Link to="/FindJobs" className="dez-tilte">Translation Jobs</Link>
+							<p className="m-a0">5 Open Positions</p>
 							<div className="rotate-icon"><i className="ti-panel"></i></div> 
 						</div>
 					</div>

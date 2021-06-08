@@ -356,7 +356,7 @@ class UpdateJob extends Component {
                             "is-invalid": errors.endDate,
                           })}
                           placeholder="End Date"
-                          name="endDate"
+                          
                           value={this.state.endDate}
                           onChange={this.onChange}
                         />

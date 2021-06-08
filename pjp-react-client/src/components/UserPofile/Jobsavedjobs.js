@@ -5,20 +5,13 @@ import {Modal} from 'react-bootstrap';
 
 
 import Malak from "../../picture/mlk.jpg";
+import Malak1 from "../../picture/axsos-logo.png";
 
 
 
 const jobAlert=[
-	{ title: 'Social Media Expert', date:'December 15,2018', },
-	{ title: 'Web Designer', date:'November 10,2018', },
-	{ title: 'Finance Accountant', date:'October 5,2018', },
-	{ title: 'Social Media Expert', date:'December 15,2018', },
-	{ title: 'Web Designer', date:'November 10,2018', },
-	{ title: 'Finance Accountant', date:'October 5,2018', },
-	{ title: 'Social Media Expert', date:'December 15,2018', },
-	{ title: 'Web Designer', date:'November 10,2018', },
-	{ title: 'Finance Accountant', date:'October 5,2018', },
-	{ title: 'Social Media Expert', date:'December 15,2018', },	
+	{ title: 'FrontEnd React.js Developer', date:'May 15,2021', },
+		
 ]
 
 class Jobsavedjobs extends Component{
@@ -97,7 +90,7 @@ class Jobsavedjobs extends Component{
 									<div className="col-xl-9 col-lg-8 m-b30">
 										<div className="job-bx save-job browse-job table-job-bx clearfix">
 											<div className="job-bx-title clearfix">
-												<h5 className="font-weight-700 pull-left text-uppercase">269 Saved Jobs</h5>
+												<h5 className="font-weight-700 pull-left text-uppercase">1 Saved Jobs</h5>
 												<div className="float-right">
 													<span className="select-title">Sort by freshness</span>
 													<select className="custom-btn">
@@ -123,11 +116,11 @@ class Jobsavedjobs extends Component{
 														<tr key={index}>
 															<td className="job-post-company">
 																<Link to={""}><span>
-																	<img alt="" src={Malak} />
+																	<img alt="" src={Malak1} />
 																</span></Link>
 															</td>
 															<td className="job-name"><Link to={"/job-detail"}>{item.title}</Link></td>
-															<td className="criterias text-primary"><Link to={"/company-profile"}>@company-name</Link></td>
+															<td className="criterias text-primary"><Link to={"/company-profile"}>www.axsos.me</Link></td>
 															<td className="date">{item.date}</td>
 															<td className="job-links">
 																<Link to={"#"} data-toggle="modal" data-target="#exampleModalLong" onClick={this.handleShow}>
@@ -155,19 +148,49 @@ class Jobsavedjobs extends Component{
 												<div className="modal-content">
 													<div className="modal-header">
 														<div className="logo-img">
-															<img alt="" src={Malak} />
+															<img alt="" src={Malak1} />
 														</div>
-														<h5 className="modal-title">Company Name</h5>
+														<h5 className="modal-title">Axsos AG</h5>
 														<button type="button" className="close" data-dismiss="modal" aria-label="Close" onClick={this.handleClose}>
 															<span aria-hidden="true">&times;</span>
 														</button>
 													</div>
 													<div className="modal-body">
 														<ul>
-															<li><strong>Job Title :</strong><p> Web Developer – PHP, HTML, CSS </p></li>
-															<li><strong>Experience :</strong><p>5 Year 3 Months</p></li>
-															<li><strong>Deseription :</strong>
-																<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since.</p></li>
+															<li><strong>Job Title :</strong><p> FrontEnd React.js Developer</p></li>
+															<li><strong>Experience :</strong><p>3 Year </p></li>
+															<li><strong>Your responsibilities:</strong>
+																<p>Developing new user-facing features using React.js</p>
+																<p>Building reusable components and front-end libraries for future use</p>
+																<p>Translating designs and wireframes into high-quality code</p>
+																<p>Optimizing components for maximum performance across a vast array of web-capable devices and browsers</p>
+																<p>Testing the developed features to assure compliance and consistency</p>
+																<p>Making suggestions for better solutions to problems</p>
+
+																
+																</li>
+
+																<li><strong>Your profile</strong>
+																<p>BA degree in Computer Engineering, IT, Computer Science or related field</p>
+																<p>Excellent written / spoken English is a must, German is a plus</p>
+																<p>Personal commitment to success - making it happen whatever it takes</p>
+																<p>Prepared to dive into unknown challenges</p>
+																<p>Committed to deliver high quality work daily</p>
+																<p>Proficiency in JavaScript, including DOM manipulation</p>
+																<p>Minimum of 3 years of experience as frontend developer</p>
+																<p>Thorough understanding of React.js and its core principles</p>
+																<p>Experience with popular React.js workflows (Redux)</p>
+																<p>Familiarity with newer specifications of EcmaScript</p>
+																<p>Experience with data structure libraries (e.g., Immutable.js)</p>
+																<p>Familiarity with modern front-end build pipelines and tools</p>
+																<p>Experience with common front-end tools such as Babel, Webpack, NPM, etc.</p>
+																<p>Familiarity with code versioning tools such as Git</p>
+																<p>Knowledge of React Native is a plus</p>
+
+
+
+																
+																</li>
 														</ul>
 													</div>
 													<div className="modal-footer">

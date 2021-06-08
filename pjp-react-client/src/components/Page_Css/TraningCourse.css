@@ -94,7 +94,7 @@
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
-    color: #1246f1;
+    color: #1a1918;
   }
   
   #hero2 h2 {
@@ -114,13 +114,13 @@
     border-radius: 50px;
     transition: 0.5s;
     margin: 10px;
-    border: 2px solid #4154f1;
+    border: 2px solid #121213;
     text-transform: uppercase;
     color: #fff;
   }
   
   #hero2 .btn-get-started2:hover {
-    background: #4154f1;
+    background: #19191a;
   }
   
   @media (min-width: 1024px) {

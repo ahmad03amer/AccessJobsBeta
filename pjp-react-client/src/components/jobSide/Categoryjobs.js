@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import logo from "../../picture/logo.svg";
 
 import Jobsearchform from './../Element/Jobsearchform';
 import logo17 from "./../../images/logo/logo17.png"
